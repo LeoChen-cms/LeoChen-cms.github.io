@@ -1,6 +1,4 @@
-Explore The World! 欢迎来到我的精神角落
+Explore The World! <u>欢迎来到我的精神角落</u>
 
-### 🖼️ 我的第一张壁纸展示
+### 🖼️My Favorite 2D Character
 ![照片描述](塑心壁纸1.png)
-
-*这是我尝试上传的第一张壁纸，未来我会在这里分享更多精彩活动！*
