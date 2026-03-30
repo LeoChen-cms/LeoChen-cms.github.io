@@ -1,7 +1,10 @@
-Explore The World! <u>欢迎来到我的精神角落</u>
-
-### 🖼️My Favorite 2D Character - Virtuosa
-![照片描述](塑心壁纸1.png)
+***Explore The World***🌏  
+*Welcome to My Corner of the World*🧭
 
 ### 🖼️Birdwatching Section
 ![照片描述](小天鹅.JPG)
+*A Small Swan I took in Minjiang Wetland Park*
+
+### 🖼️ACGN Section
+![照片描述](塑心壁纸1.png)
+*My favorite ACGN character - Virtuosa from Arknights*
