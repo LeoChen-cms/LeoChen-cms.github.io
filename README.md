@@ -1,8 +1,8 @@
-# LeoChen-cms.github.io
-Explore The World
+# 欢迎来到我的个人主页 👋
 
-Wlecome to my personal space!
+Explore The World! 欢迎来到我的精神角落。
 
-The photo is a wallpaper I tried to upload…
+### 🖼️ 我的第一张壁纸展示
+!(塑心壁纸1.png)
 
-In the future I will upload my various experience and activities on this page😊
+*这是我尝试上传的第一张壁纸，未来我会在这里分享更多精彩活动！*
