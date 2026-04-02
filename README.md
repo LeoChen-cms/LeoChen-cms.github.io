@@ -2,11 +2,19 @@
 Contact me📮: 3870045464@qq.com
 
 ### Birdwatching Section
-![照片描述](小天鹅.JPG)
-*A Small Swan I took in Minjiang Wetland Park*
+![小天鹅](小天鹅.JPG)
+*A Small Swan I took in Minjiang Wetland Park*  
+![北红尾鸲](北红尾鸲.JPG)  
+![树麻雀](树麻雀.JPG)  
+![棕背伯劳](棕背伯劳.JPG)  
+![牛背鹭](牛背鹭.JPG)  
+![白鹤](白鹤.JPG)  
+![黑喉石鵖](<黑喉石鵖 (2).JPG>)
+
+
 
 ### ACGN Section
-![照片描述](塑心壁纸1.png)
+![塑心壁纸](塑心壁纸1.png)
 *My favorite ACGN character - Virtuosa from Arknights*
 
 ### Small Games  
