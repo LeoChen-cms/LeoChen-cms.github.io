@@ -39,11 +39,7 @@ Contact me📮: 3870045464@qq.com
 
 ---
 
-**2026/02/07-08 中国，福建，福州，兴化湾与闽江湿地保护区** ![小天鹅](小天鹅.JPG)  
-*&nbsp;&nbsp;A Small Swan I took in Minjiang Wetland Park*
-<br><br>
-
-
+**2026/02/07-08 中国，福建，福州，兴化湾与闽江湿地保护区**
 
 
 ### ACGN Section
