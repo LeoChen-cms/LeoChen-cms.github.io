@@ -5,6 +5,42 @@ Contact me📮: 3870045464@qq.com
 
 **2026 中国，福建，福州，马尾闽江滨**
 
+![乌鸫](images/乌鸫_compressed.JPG)
+
+*&nbsp;&nbsp;Chinese Blackbird; Turdus mandarinus; 乌鸫*
+
+<br><br>
+
+![柳莺](images/柳莺Phylloscopus_compressed.JPG)
+
+*&nbsp;&nbsp;Leaf Warbler; Phylloscopus; 柳莺*
+
+<br><br>
+
+![白胸苦恶鸟](images/白胸苦恶鸟_compressed.JPG)
+
+*&nbsp;&nbsp;White-breasted Waterhen; Amaurornis phoenicurus; 白胸苦恶鸟*
+
+<br><br>
+
+![白鹭](images/白鹭2_compressed.JPG)
+
+*&nbsp;&nbsp;Little Egret; Egretta garzetta; 白鹭*
+
+<br><br>
+
+![青脚鹬](images/青脚鹬_compressed.JPG)
+
+*&nbsp;&nbsp;Common Greenshank; Tringa nebularia; 青脚鹬*
+
+<br><br>
+
+![黄鹡鸰](images/黄鹡鸰_compressed.JPG)
+
+*&nbsp;&nbsp;Yellow Wagtail; Motacilla flava; 黄鹡鸰*
+
+<br><br>
+
 ---
 
 **2026 中国，福建，福州，森林公园与塔礁洲湿地**
