@@ -9,10 +9,6 @@ Contact me📮: 3870045464@qq.com
 
 **2026/01/23 中国，福建，福州，森林公园与塔礁洲湿地**
 
----
-
-**2026/01/25 中国，福建省，福州，连江，山堂村**
-
 ![北红尾鸲](北红尾鸲.JPG)  
 *&nbsp;&nbsp;Daurian Redstart; Phoenicurus auroreus; 北红尾鸲*
 <br><br>
@@ -36,6 +32,10 @@ Contact me📮: 3870045464@qq.com
 ![黑喉石鵖](<黑喉石鵖 (2).JPG>)  
 *&nbsp;&nbsp;Common Stonechat; Saxicola torquata; 黑喉石鵖*
 <br><br>
+
+---
+
+**2026/01/25 中国，福建省，福州，连江，山堂村**
 
 ---
 
