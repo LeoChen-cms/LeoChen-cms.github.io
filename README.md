@@ -1,4 +1,4 @@
-A personal collection of nature, birdwatching, and everyday observations.🧭
+<span style="color: #8ED8FF;">A personal collection of nature, birdwatching, and everyday observations.</span>🧭
 
 **Contact:** 3870045464@qq.com
 
