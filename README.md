@@ -287,23 +287,26 @@ Select a location to explore the bird photographs and field records.
 
 <img src="鸿雁.JPG" alt="鸿雁 Swan Goose" width="600">
 
-### Great Egret · 大白鹭
-
-*Ardea alba*
-
-<img src="大白鹭.jpg" alt="大白鹭 Great Egret" width="600">
-
 </details>
 
 ---
 
-## About Species Records & My Reflection
+
+---
+
+## Reflections☁️
+
+<details>
+<summary><strong>Environmental Reflections · 环境观察与思考</strong></summary>
 
 Before I started birdwatching with my mom and an instructor from the Fujian Birdwatching Association, I had never deeply explored the natural environment around my hometown, Fuzhou. Birdwatching has given me a great opportunity to appreciate the beauty of nature and enjoy its diverse landscapes.
 
 However, I have also noticed conflicts between human activities and wildlife. Some farmers set up bird nets around their fields to protect their crops. Meanwhile, the expansion of salt farms and industrial zones along the coast has encroached on wildlife habitats. My fellow birdwatchers have told me that both bird diversity and the number of birds we can observe have been decreasing year by year.
 
 Humans still need to find a balance between economic development and environmental protection.
+
+</details>
+
 
 ---
 
