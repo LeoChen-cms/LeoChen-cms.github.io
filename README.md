@@ -113,6 +113,36 @@ Contact me📮: 3870045464@qq.com
 
 **2026 中国，福建，福州，兴化湾与闽江湿地保护区**
 
+![反嘴鹬](反嘴鹬.JPG)
+
+*&nbsp;&nbsp;Pied Avocet; Recurvirostra avosetta; 反嘴鹬*
+
+<br><br>
+
+![小天鹅](小天鹅.JPG)
+
+*&nbsp;&nbsp;Tundra Swan; Cygnus columbianus; 小天鹅*
+
+<br><br>
+
+![白琵鹭](白琵鹭.JPG)
+
+*&nbsp;&nbsp;Eurasian Spoonbill; Platalea leucorodia; 白琵鹭*
+
+<br><br>
+
+![红隼](红隼.JPG)
+
+*&nbsp;&nbsp;Common Kestrel; Falco tinnunculus; 红隼*
+
+<br><br>
+
+![鸿雁](鸿雁.JPG)
+
+*&nbsp;&nbsp;Swan Goose; Anser cygnoides; 鸿雁*
+
+<br><br>
+
 
 ### ACGN Section
 ![塑心壁纸](塑心壁纸1.png)
