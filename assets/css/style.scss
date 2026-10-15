@@ -1,0 +1,39 @@
+
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ===== Website Colors ===== */
+:root {
+  --heading-color: #8ED8FF;
+  --link-color: #58BCEB;
+  --text-color: #333333;
+  --muted-color: #6B7280;
+  --border-color: #D8EAF4;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: #2497CF;
+}
+
+/* ===== Text ===== */
+body {
+  color: var(--text-color);
+}
+
+/* ===== Horizontal Lines ===== */
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+}
