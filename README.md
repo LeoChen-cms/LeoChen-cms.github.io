@@ -3,11 +3,51 @@ Contact me📮: 3870045464@qq.com
 
 ### Birdwatching Section
 
-**2026/01/21 中国，福建，福州，马尾闽江滨**
+**2026 中国，福建，福州，马尾闽江滨**
 
 ---
 
-**2026/01/23 中国，福建，福州，森林公园与塔礁洲湿地**
+**2026 中国，福建，福州，森林公园与塔礁洲湿地**
+
+![斑鱼狗](斑鱼狗.JPG)
+
+*&nbsp;&nbsp;Pied Kingfisher; Ceryle rudis; 斑鱼狗*
+
+<br><br>
+
+![灰背燕尾](灰背燕尾2.JPG)
+
+*&nbsp;&nbsp;Slaty-backed Forktail; Enicurus schistaceus; 灰背燕尾*
+
+<br><br>
+
+![红嘴蓝鹊](红嘴蓝鹊.JPG)
+
+*&nbsp;&nbsp;Red-billed Blue Magpie; Urocissa erythroryncha; 红嘴蓝鹊*
+
+<br><br>
+
+![赤红山椒鸟](赤红山椒鸟.JPG)
+
+*&nbsp;&nbsp;Scarlet Minivet; Pericrocotus speciosus; 赤红山椒鸟*
+
+<br><br>
+
+![铜蓝鹟](铜蓝鹟.JPG)
+
+*&nbsp;&nbsp;Verditer Flycatcher; Eumyias thalassinus; 铜蓝鹟*
+
+<br><br>
+
+![长尾缝叶莺](长尾缝叶莺.JPG)
+
+*&nbsp;&nbsp;Common Tailorbird; Orthotomus sutorius; 长尾缝叶莺*
+
+<br><br>
+
+---
+
+**2026 中国，福建省，福州，连江，山堂村**
 
 ![北红尾鸲](北红尾鸲.JPG)  
 *&nbsp;&nbsp;Daurian Redstart; Phoenicurus auroreus; 北红尾鸲*
@@ -35,11 +75,7 @@ Contact me📮: 3870045464@qq.com
 
 ---
 
-**2026/01/25 中国，福建省，福州，连江，山堂村**
-
----
-
-**2026/02/07-08 中国，福建，福州，兴化湾与闽江湿地保护区**
+**2026 中国，福建，福州，兴化湾与闽江湿地保护区**
 
 
 ### ACGN Section
