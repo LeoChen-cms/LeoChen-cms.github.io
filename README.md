@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
@@ -131,10 +130,8 @@
   <p class="bw-contact">📮 Contact: 3870045464@qq.com</p>
 </div>
 
-<img src="https://img.shields.io/badge/Species%20Checklist-87%20Records-52796F?style=flat-square" alt="Species Checklist">
-
 <details>
-<summary>Bird Species Checklist · 鸟种总名录（87 Species）</summary>
+<summary>Bird Species Checklist · 鸟种总名录</summary>
 
 <div class="bw-table-wrap">
 
