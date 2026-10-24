@@ -44,7 +44,7 @@ details.list > summary::-webkit-details-marker { display:none; }
 details.list > summary .tag { font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); }
 details.list > summary .count { margin-left:auto; font-size:11px; letter-spacing:.14em; color:var(--faint); }
 details.list[open] > summary { border-bottom:1px solid var(--rule); }
-.idxlist { columns:2; column-gap:46px; padding:18px 0 6px; }
+.idxlist { display:grid; grid-template-columns:1fr 1fr; gap:0 46px; padding:18px 0 6px; }
 .idx { display:grid; grid-template-columns:2.3em 1fr; gap:0 10px; break-inside:avoid; padding:5px 0; border-bottom:1px dotted var(--rule); font-size:13.5px; }
 .idx .n { font-size:10px; color:var(--faint); padding-top:4px; letter-spacing:.06em; }
 .idx .cn { letter-spacing:.04em; }
@@ -96,7 +96,7 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
 @media (max-width:640px) {
   .sheet { padding:52px 20px 80px; }
   .toc { grid-template-columns:1fr; }
-  .idxlist { columns:1; }
+  .idxlist { grid-template-columns:1fr; }
   .plates { grid-template-columns:1fr; gap:30px; }
   .log-head { grid-template-columns:40px 1fr; }
   h2 { font-size:23px; }
