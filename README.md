@@ -1,395 +1,517 @@
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Birdwatching Journal · Fujian</title>
-<style>/* ============ 全局基础 ============ */
-.bw-page {
-  max-width: 960px;
-  margin: 0 auto;
-  line-height: 1.75;
-  color: #2d3a35;
-  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LEO CHEN · 观鸟手记</title>
+<style>
+:root {
+  --paper:#f6f3ea; --ink:#22211d; --ink-soft:#4d4a40;
+  --rule:#d7d1c0; --rule-soft:#e6e0d1; --muted:#8f8877; --faint:#b3aa95;
 }
-.bw-page img { border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.10); }
-.bw-page em { color: #6b7d76; }
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body {
+  margin:0; background:var(--paper); color:var(--ink);
+  font:16.5px/1.78 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+       "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", serif;
+  -webkit-font-smoothing:antialiased;
+}
+.sheet { max-width:820px; margin:0 auto; padding:78px 28px 110px; }
 
-/* ============ 顶部简介 ============ */
-.bw-hero {
-  padding: 28px 32px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #eef7f3 0%, #e3f0f7 100%);
-  border: 1px solid #d3e4dc;
-  margin-bottom: 18px;
-}
-.bw-hero .bw-tagline { font-size: 1.15em; color: #2f6f5e; font-weight: 600; margin: 0 0 6px; }
-.bw-hero .bw-sub { color: #5c6f68; margin: 0; }
-.bw-hero .bw-contact { font-size: .9em; color: #7a8a84; margin-top: 10px; }
-
-/* ============ 折叠面板通用 ============ */
-.bw-page details {
-  border: 1px solid #dde7e2;
-  border-radius: 12px;
-  margin: 14px 0;
-  background: #fbfdfc;
-  overflow: hidden;
-}
-.bw-page summary {
-  list-style: none;
-  cursor: pointer;
-  padding: 14px 18px;
-  font-weight: 600;
-  font-size: 1.05em;
-  color: #24483d;
-  background: linear-gradient(90deg, #edf5f1, #f7fbf9);
-  border-left: 6px solid #52796f;
-  transition: background .15s ease, padding-left .15s ease;
-  user-select: none;
-}
-.bw-page summary::-webkit-details-marker { display: none; }
-.bw-page summary::before {
-  content: "▸";
-  display: inline-block;
-  margin-right: 10px;
-  color: #52796f;
-  transition: transform .18s ease;
-  font-size: .95em;
-}
-.bw-page details[open] summary::before { transform: rotate(90deg); }
-.bw-page summary:hover { background: #e2efe8; padding-left: 24px; }
-.bw-page details[open] summary { border-bottom: 1px solid #e3ece8; }
-.bw-page details > *:not(summary) { margin-left: 18px; margin-right: 18px; }
-
-/* 每个地点板块用不同主题色区分 */
-.bw-site summary { border-left-color: var(--accent, #52796f); }
-.bw-site summary::before { color: var(--accent, #52796f); }
-.bw-site summary:hover { background: color-mix(in srgb, var(--accent, #52796f) 12%, white); }
-
-/* ============ 鸟种名录表格 ============ */
-.bw-table-wrap { overflow-x: auto; margin: 12px 0; }
-.bw-table-wrap table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: .95em;
-  white-space: nowrap;
-}
-.bw-table-wrap th {
-  background: #52796f;
-  color: #fff;
-  padding: 8px 12px;
-  text-align: left;
-  position: sticky;
-  top: 0;
-}
-.bw-table-wrap td { padding: 6px 12px; border-bottom: 1px solid #e6eeea; }
-.bw-table-wrap tbody tr:nth-child(even) { background: #f3f8f5; }
-.bw-table-wrap tbody tr:hover { background: #e6f1ec; }
-
-/* ============ 物种卡片网格 ============ */
-.bw-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
-  margin: 20px 0;
-}
-.bw-card {
-  border: 1px solid #e0e9e4;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #fff;
-  transition: transform .15s ease, box-shadow .15s ease;
-}
-.bw-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(60,90,80,.15); }
-.bw-card img { display: block; width: 100%; height: 190px; object-fit: cover; border-radius: 0; box-shadow: none; }
-.bw-card .bw-card-body { padding: 10px 14px 12px; }
-.bw-card .bw-card-en { font-weight: 700; color: #24483d; }
-.bw-card .bw-card-cn { font-weight: 600; color: #52796f; margin-left: 4px; }
-.bw-card .bw-card-sci { font-size: .88em; color: #7a8a84; font-style: italic; }
-
-/* ============ 反思/杂记 ============ */
-.bw-notes {
-  border-left: 4px solid #c9a86a;
-  background: #fdfaf3;
-  padding: 14px 18px;
-  border-radius: 0 10px 10px 0;
-  color: #4d4636;
+.mono, .kicker, .meta, .log-no, .toc .n, .idx .n, .en, .foot, .tag {
+  font-family:ui-sans-serif, -apple-system, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* ============ 占位 ============ */
-.bw-empty { color: #8b9a94; font-size: .92em; font-style: italic; padding: 8px 4px; }
+/* 刊头 */
+.kicker { margin:0 0 26px; font-size:10.5px; letter-spacing:.26em; text-transform:uppercase; color:var(--muted); }
+.kicker .dot { margin:0 .7em; }
+h1 { margin:0 0 22px; font-size:clamp(38px,6.4vw,60px); font-weight:400; line-height:1.06; letter-spacing:.14em; }
+.lede { margin:0; font-size:17px; color:var(--ink-soft); max-width:32em; }
+.contact { margin:30px 0 0; padding-top:15px; border-top:1px solid var(--ink); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); display:flex; flex-wrap:wrap; gap:6px 26px; }
 
-/* ============ ACGN ============ */
-.bw-acgn { text-align: center; margin-top: 24px; }
-.bw-acgn img { max-width: 420px; width: 100%; }
-.bw-acgn p { color: #7a8a84; font-size: .92em; }</style>
-<base target="_blank">
+/* 目录 */
+.toc { display:grid; grid-template-columns:1fr 1fr; gap:0 46px; margin:46px 0 0; border-top:1px solid var(--rule); }
+.toc a { display:flex; gap:16px; align-items:baseline; padding:10px 0; border-bottom:1px solid var(--rule-soft); text-decoration:none; color:inherit; font-size:14.5px; }
+.toc a:hover .t { text-decoration:underline; text-underline-offset:3px; }
+.toc .n { font-size:10.5px; color:var(--faint); letter-spacing:.1em; }
+
+/* 名录 */
+details.list { margin-top:74px; border-top:1px solid var(--ink); }
+details.list > summary { cursor:pointer; list-style:none; padding:16px 0 14px; display:flex; align-items:baseline; gap:16px; font-size:22px; letter-spacing:.06em; }
+details.list > summary::-webkit-details-marker { display:none; }
+details.list > summary .tag { font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); }
+details.list > summary .count { margin-left:auto; font-size:11px; letter-spacing:.14em; color:var(--faint); }
+details.list[open] > summary { border-bottom:1px solid var(--rule); }
+.idxlist { columns:2; column-gap:46px; padding:18px 0 6px; }
+.idx { display:grid; grid-template-columns:2.3em 1fr; gap:0 10px; break-inside:avoid; padding:5px 0; border-bottom:1px dotted var(--rule); font-size:13.5px; }
+.idx .n { font-size:10px; color:var(--faint); padding-top:4px; letter-spacing:.06em; }
+.idx .cn { letter-spacing:.04em; }
+.idx .sci { display:block; font-size:11.5px; color:#7d7768; }
+.idx .sci em { font-style:italic; }
+
+/* 观察点 */
+.log { margin-top:82px; }
+.log-head { display:grid; grid-template-columns:58px 1fr; gap:0 18px; border-top:1px solid var(--ink); padding-top:14px; margin-bottom:30px; }
+.log-no { font-size:11px; letter-spacing:.14em; color:var(--faint); padding-top:9px; }
+h2 { margin:0; font-size:27px; font-weight:400; letter-spacing:.07em; line-height:1.3; }
+.log-sub { margin:7px 0 0; font-size:11px; letter-spacing:.15em; text-transform:uppercase; color:var(--muted); }
+.log-sub .sep { margin:0 .8em; }
+
+.plates { display:grid; grid-template-columns:1fr 1fr; gap:38px 26px; }
+.plate { margin:0; }
+.plate img { display:block; width:100%; aspect-ratio:4/3; object-fit:cover; background:#e5dfd0; filter:saturate(.94) contrast(1.02); transition:filter .35s ease; }
+.plate:hover img { filter:saturate(1.04) contrast(1.04); }
+figcaption { margin-top:11px; display:flex; flex-direction:column; gap:1px; }
+figcaption .cn { font-size:15.5px; letter-spacing:.05em; }
+figcaption .sci { font-size:12.5px; color:#6f6a5c; }
+figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--faint); }
+.soon { margin:0; font-size:13.5px; color:var(--muted); border-left:2px solid var(--rule); padding:2px 0 2px 16px; }
+
+/* 手记 */
+.notes { margin-top:82px; }
+.notes .body { max-width:33em; font-size:16px; color:#3a382f; }
+.notes .body p { margin:0 0 18px; }
+.notes .body p:first-child::first-letter { float:left; font-size:52px; line-height:.86; padding:6px 10px 0 0; }
+
+/* 插图 */
+.acgn { margin-top:70px; padding-top:26px; border-top:1px solid var(--rule); display:flex; gap:22px; align-items:center; }
+.acgn img { width:160px; display:block; filter:grayscale(1) contrast(1.05); transition:filter .45s ease; }
+.acgn:hover img { filter:none; }
+.acgn .cap { font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+
+.foot { margin-top:84px; padding-top:16px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; gap:20px; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--faint); }
+
+@media (max-width:640px) {
+  .sheet { padding:52px 20px 80px; }
+  .toc { grid-template-columns:1fr; }
+  .idxlist { columns:1; }
+  .plates { grid-template-columns:1fr; gap:30px; }
+  .log-head { grid-template-columns:40px 1fr; }
+  h2 { font-size:23px; }
+  .acgn { flex-direction:column; align-items:flex-start; }
+}
+</style>
 </head>
 <body>
-<div class="bw-page">
+<main class="sheet">
 
-<div class="bw-hero">
-  <p class="bw-tagline">A personal collection of nature, birdwatching, and everyday observations. 🧭</p>
-  <p class="bw-sub"><em>A growing record of the birds and landscapes I have encountered across Fujian, China.</em></p>
-  <p class="bw-contact">📮 Contact: 3870045464@qq.com</p>
-</div>
+<header>
+  <p class="kicker">Leo Chen<span class="dot">·</span>Birdwatching Notes</p>
+  <h1>观鸟手记</h1>
+  <p class="lede">A growing record of the birds and landscapes I have encountered across Fujian, China.</p>
+  <p class="contact"><span>Fujian, China · 2026</span><span>3870045464@qq.com</span></p>
+</header>
 
-<details>
-<summary>Bird Species Checklist · 鸟种总名录</summary>
+<nav class="toc">
+<a href="#mawei"><span class="n">01</span><span class="t">马尾闽江滨</span></a>
+<a href="#forest"><span class="n">02</span><span class="t">森林公园与塔礁洲湿地</span></a>
+<a href="#shantang"><span class="n">03</span><span class="t">连江山堂村</span></a>
+<a href="#xinghua"><span class="n">04</span><span class="t">兴化湾与闽江河口湿地</span></a>
+<a href="#xihu"><span class="n">05</span><span class="t">福州西湖</span></a>
+<a href="#guling"><span class="n">06</span><span class="t">鼓岭</span></a>
+<a href="#fafu"><span class="n">07</span><span class="t">福建农林大学</span></a>
+<a href="#dongtan"><span class="n">08</span><span class="t">崇明东滩湿地</span></a>
+<a href="#shouxi"><span class="n">09</span><span class="t">莆田绶溪公园</span></a>
+</nav>
 
-<div class="bw-table-wrap">
-
-<table>
-<thead><tr><th>No.</th><th>English Name</th><th>Scientific Name</th><th>中文名</th></tr></thead>
-<tbody>
-<tr><td>1</td><td>Rufous-capped Babbler</td><td><em>Cyanoderma ruficeps</em></td><td>红头穗鹛</td></tr>
-<tr><td>2</td><td>Masked Laughingthrush</td><td><em>Pterorhinus perspicillatus</em></td><td>黑脸噪鹛</td></tr>
-<tr><td>3</td><td>Olive-backed Pipit</td><td><em>Anthus hodgsoni</em></td><td>树鹨</td></tr>
-<tr><td>4</td><td>Grey Treepie</td><td><em>Dendrocitta formosae</em></td><td>灰树鹊</td></tr>
-<tr><td>5</td><td>Great Barbet</td><td><em>Psilopogon virens</em></td><td>大拟啄木鸟</td></tr>
-<tr><td>6</td><td>Pallas's Leaf Warbler</td><td><em>Phylloscopus proregulus</em></td><td>黄腰柳莺</td></tr>
-<tr><td>7</td><td>Fork-tailed Sunbird</td><td><em>Aethopyga christinae</em></td><td>叉尾太阳鸟</td></tr>
-<tr><td>8</td><td>Little Egret</td><td><em>Egretta garzetta</em></td><td>白鹭</td></tr>
-<tr><td>9</td><td>Spotted Dove</td><td><em>Spilopelia chinensis</em></td><td>珠颈斑鸠</td></tr>
-<tr><td>10</td><td>Chinese Blackbird</td><td><em>Turdus mandarinus</em></td><td>乌鸫</td></tr>
-<tr><td>11</td><td>Black-faced Bunting</td><td><em>Emberiza spodocephala</em></td><td>灰头鹀</td></tr>
-<tr><td>12</td><td>Oriental Magpie-Robin</td><td><em>Copsychus saularis</em></td><td>鹊鸲</td></tr>
-<tr><td>13</td><td>Plumbeous Water Redstart</td><td><em>Phoenicurus fuliginosus</em></td><td>红尾水鸲</td></tr>
-<tr><td>14</td><td>White-breasted Waterhen</td><td><em>Amaurornis phoenicurus</em></td><td>白胸苦恶鸟</td></tr>
-<tr><td>15</td><td>Little Grebe</td><td><em>Tachybaptus ruficollis</em></td><td>小䴙䴘</td></tr>
-<tr><td>16</td><td>Slaty-backed Forktail</td><td><em>Enicurus schistaceus</em></td><td>灰背燕尾</td></tr>
-<tr><td>17</td><td>Great Tit</td><td><em>Parus major</em></td><td>大山雀</td></tr>
-<tr><td>18</td><td>Black-throated Bushtit</td><td><em>Aegithalos concinnus</em></td><td>红头长尾山雀</td></tr>
-<tr><td>19</td><td>White Wagtail</td><td><em>Motacilla alba</em></td><td>白鹡鸰</td></tr>
-<tr><td>20</td><td>Grey Wagtail</td><td><em>Motacilla cinerea</em></td><td>灰鹡鸰</td></tr>
-<tr><td>21</td><td>Grey-capped Pygmy Woodpecker</td><td><em>Yungipicus canicapillus</em></td><td>星头啄木鸟</td></tr>
-<tr><td>22</td><td>Black Bulbul</td><td><em>Hypsipetes leucocephalus</em></td><td>黑短脚鹎</td></tr>
-<tr><td>23</td><td>Common Kingfisher</td><td><em>Alcedo atthis</em></td><td>普通翠鸟</td></tr>
-<tr><td>24</td><td>Orange-bellied Leafbird</td><td><em>Chloropsis hardwickii</em></td><td>橙腹叶鹎</td></tr>
-<tr><td>25</td><td>Light-vented Bulbul</td><td><em>Pycnonotus sinensis</em></td><td>白头鹎</td></tr>
-<tr><td>26</td><td>Red-whiskered Bulbul</td><td><em>Pycnonotus jocosus</em></td><td>红耳鹎</td></tr>
-<tr><td>27</td><td>Collared Finchbill</td><td><em>Spizixos semitorques</em></td><td>领雀嘴鹎</td></tr>
-<tr><td>28</td><td>Mountain Bulbul</td><td><em>Ixos mcclellandii</em></td><td>绿翅短脚鹎</td></tr>
-<tr><td>29</td><td>Chestnut Bulbul</td><td><em>Hemixos castanonotus</em></td><td>栗背短脚鹎</td></tr>
-<tr><td>30</td><td>Common Sandpiper</td><td><em>Actitis hypoleucos</em></td><td>矶鹬</td></tr>
-<tr><td>31</td><td>Red-billed Starling</td><td><em>Spodiopsar sericeus</em></td><td>丝光椋鸟</td></tr>
-<tr><td>32</td><td>Richard's Pipit</td><td><em>Anthus richardi</em></td><td>田鹨</td></tr>
-<tr><td>33</td><td>Little Ringed Plover</td><td><em>Charadrius dubius</em></td><td>金眶鸻</td></tr>
-<tr><td>34</td><td>Dunlin</td><td><em>Calidris alpina</em></td><td>黑腹滨鹬</td></tr>
-<tr><td>35</td><td>Plain Prinia</td><td><em>Prinia inornata</em></td><td>纯色山鹪莺</td></tr>
-<tr><td>36</td><td>Oriental Magpie</td><td><em>Pica serica</em></td><td>喜鹊</td></tr>
-<tr><td>37</td><td>Greater Coucal</td><td><em>Centropus sinensis</em></td><td>褐翅鸦鹃</td></tr>
-<tr><td>38</td><td>Yellow Wagtail</td><td><em>Motacilla flava</em></td><td>黄鹡鸰</td></tr>
-<tr><td>39</td><td>Grey-capped Greenfinch</td><td><em>Chloris sinica</em></td><td>金翅雀</td></tr>
-<tr><td>40</td><td>Little Bunting</td><td><em>Emberiza pusilla</em></td><td>小鹀</td></tr>
-<tr><td>41</td><td>Black-winged Kite</td><td><em>Elanus caeruleus</em></td><td>黑翅鸢</td></tr>
-<tr><td>42</td><td>Eurasian Tree Sparrow</td><td><em>Passer montanus</em></td><td>麻雀</td></tr>
-<tr><td>43</td><td>Cattle Egret</td><td><em>Bubulcus ibis</em></td><td>牛背鹭</td></tr>
-<tr><td>44</td><td>Eurasian Spoonbill</td><td><em>Platalea leucorodia</em></td><td>白琵鹭</td></tr>
-<tr><td>45</td><td>Spot-billed Duck</td><td><em>Anas zonorhyncha</em></td><td>斑嘴鸭</td></tr>
-<tr><td>46</td><td>Eurasian Wigeon</td><td><em>Mareca penelope</em></td><td>赤颈鸭</td></tr>
-<tr><td>47</td><td>Eurasian Teal</td><td><em>Anas crecca</em></td><td>绿翅鸭</td></tr>
-<tr><td>48</td><td>Long-tailed Shrike</td><td><em>Lanius schach</em></td><td>棕背伯劳</td></tr>
-<tr><td>49</td><td>Common Kestrel</td><td><em>Falco tinnunculus</em></td><td>红隼</td></tr>
-<tr><td>50</td><td>Grey Heron</td><td><em>Ardea cinerea</em></td><td>苍鹭</td></tr>
-<tr><td>51</td><td>Crested Myna</td><td><em>Acridotheres cristatellus</em></td><td>八哥</td></tr>
-<tr><td>52</td><td>Grey-backed Shrike</td><td><em>Lanius tephronotus</em></td><td>灰背伯劳</td></tr>
-<tr><td>53</td><td>Oriental Turtle Dove</td><td><em>Streptopelia orientalis</em></td><td>山斑鸠</td></tr>
-<tr><td>54</td><td>Siberian Crane</td><td><em>Leucogeranus leucogeranus</em></td><td>白鹤</td></tr>
-<tr><td>55</td><td>Great Cormorant</td><td><em>Phalacrocorax carbo</em></td><td>普通鸬鹚</td></tr>
-<tr><td>56</td><td>Black-headed Gull</td><td><em>Chroicocephalus ridibundus</em></td><td>红嘴鸥</td></tr>
-<tr><td>57</td><td>Great Egret</td><td><em>Ardea alba</em></td><td>大白鹭</td></tr>
-<tr><td>58</td><td>Peregrine Falcon</td><td><em>Falco peregrinus</em></td><td>游隼</td></tr>
-<tr><td>59</td><td>Black Kite</td><td><em>Milvus migrans</em></td><td>黑鸢</td></tr>
-<tr><td>60</td><td>Common Greenshank</td><td><em>Tringa nebularia</em></td><td>青脚鹬</td></tr>
-<tr><td>61</td><td>Saunders's Gull</td><td><em>Chroicocephalus saundersi</em></td><td>黑嘴鸥</td></tr>
-<tr><td>62</td><td>Slaty-backed Gull</td><td><em>Larus schistisagus</em></td><td>西伯利亚银鸥</td></tr>
-<tr><td>63</td><td>Common Moorhen</td><td><em>Gallinula chloropus</em></td><td>黑水鸡</td></tr>
-<tr><td>64</td><td>Common Snipe</td><td><em>Gallinago gallinago</em></td><td>扇尾沙锥</td></tr>
-<tr><td>65</td><td>White-cheeked Starling</td><td><em>Spodiopsar cineraceus</em></td><td>灰椋鸟</td></tr>
-<tr><td>66</td><td>Grey Plover</td><td><em>Pluvialis squatarola</em></td><td>灰斑鸻</td></tr>
-<tr><td>67</td><td>Black-tailed Godwit</td><td><em>Limosa limosa</em></td><td>黑尾塍鹬</td></tr>
-<tr><td>68</td><td>Northern Lapwing</td><td><em>Vanellus vanellus</em></td><td>凤头麦鸡</td></tr>
-<tr><td>69</td><td>Black-winged Stilt</td><td><em>Himantopus himantopus</em></td><td>黑翅长脚鹬</td></tr>
-<tr><td>70</td><td>Swan Goose</td><td><em>Anser cygnoides</em></td><td>鸿雁</td></tr>
-<tr><td>71</td><td>Northern Pintail</td><td><em>Anas acuta</em></td><td>针尾鸭</td></tr>
-<tr><td>72</td><td>Taiga Bean Goose</td><td><em>Anser fabalis</em></td><td>豆雁</td></tr>
-<tr><td>73</td><td>Tundra Swan</td><td><em>Cygnus columbianus</em></td><td>小天鹅</td></tr>
-<tr><td>74</td><td>Mallard</td><td><em>Anas platyrhynchos</em></td><td>绿头鸭</td></tr>
-<tr><td>75</td><td>Pied Avocet</td><td><em>Recurvirostra avosetta</em></td><td>反嘴鹬</td></tr>
-<tr><td>76</td><td>Bar-tailed Godwit</td><td><em>Limosa lapponica</em></td><td>斑尾塍鹬</td></tr>
-<tr><td>77</td><td>Red-billed Leiothrix</td><td><em>Leiothrix lutea</em></td><td>红嘴相思鸟</td></tr>
-<tr><td>78</td><td>Japanese White-eye</td><td><em>Zosterops japonicus</em></td><td>暗绿绣眼鸟</td></tr>
-<tr><td>79</td><td>Tiger Shrike</td><td><em>Lanius tigrinus</em></td><td>虎纹伯劳</td></tr>
-<tr><td>80</td><td>Mugimaki Flycatcher</td><td><em>Ficedula mugimaki</em></td><td>鸲姬鹟</td></tr>
-<tr><td>81</td><td>Daurian Redstart</td><td><em>Phoenicurus auroreus</em></td><td>北红尾鸲</td></tr>
-<tr><td>82</td><td>Blue Rock-Thrush</td><td><em>Monticola solitarius</em></td><td>蓝矶鸫</td></tr>
-<tr><td>83</td><td>Goldcrest</td><td><em>Regulus regulus</em></td><td>戴菊</td></tr>
-<tr><td>84</td><td>Eurasian Nuthatch</td><td><em>Sitta europaea</em></td><td>普通䴓</td></tr>
-<tr><td>85</td><td>Chestnut-crowned Warbler</td><td><em>Phylloscopus castaniceps</em></td><td>栗头鹟莺</td></tr>
-<tr><td>86</td><td>Blue Whistling-Thrush</td><td><em>Myophonus caeruleus</em></td><td>紫啸鸫</td></tr>
-<tr><td>87</td><td>Manchurian Bush Warbler</td><td><em>Horornis canturians</em></td><td>远东树莺</td></tr>
-</tbody></table>
-
-</div>
-
+<details class="list" open>
+  <summary>鸟种总名录 <span class="tag">Species Checklist</span><span class="count">87 种</span></summary>
+  <div class="idxlist">
+<div class="idx"><span class="n">1</span><span><span class="cn">红头穗鹛</span><span class="sci">Rufous-capped Babbler · <em>Cyanoderma ruficeps</em></span></span></div>
+<div class="idx"><span class="n">2</span><span><span class="cn">黑脸噪鹛</span><span class="sci">Masked Laughingthrush · <em>Pterorhinus perspicillatus</em></span></span></div>
+<div class="idx"><span class="n">3</span><span><span class="cn">树鹨</span><span class="sci">Olive-backed Pipit · <em>Anthus hodgsoni</em></span></span></div>
+<div class="idx"><span class="n">4</span><span><span class="cn">灰树鹊</span><span class="sci">Grey Treepie · <em>Dendrocitta formosae</em></span></span></div>
+<div class="idx"><span class="n">5</span><span><span class="cn">大拟啄木鸟</span><span class="sci">Great Barbet · <em>Psilopogon virens</em></span></span></div>
+<div class="idx"><span class="n">6</span><span><span class="cn">黄腰柳莺</span><span class="sci">Pallas's Leaf Warbler · <em>Phylloscopus proregulus</em></span></span></div>
+<div class="idx"><span class="n">7</span><span><span class="cn">叉尾太阳鸟</span><span class="sci">Fork-tailed Sunbird · <em>Aethopyga christinae</em></span></span></div>
+<div class="idx"><span class="n">8</span><span><span class="cn">白鹭</span><span class="sci">Little Egret · <em>Egretta garzetta</em></span></span></div>
+<div class="idx"><span class="n">9</span><span><span class="cn">珠颈斑鸠</span><span class="sci">Spotted Dove · <em>Spilopelia chinensis</em></span></span></div>
+<div class="idx"><span class="n">10</span><span><span class="cn">乌鸫</span><span class="sci">Chinese Blackbird · <em>Turdus mandarinus</em></span></span></div>
+<div class="idx"><span class="n">11</span><span><span class="cn">灰头鹀</span><span class="sci">Black-faced Bunting · <em>Emberiza spodocephala</em></span></span></div>
+<div class="idx"><span class="n">12</span><span><span class="cn">鹊鸲</span><span class="sci">Oriental Magpie-Robin · <em>Copsychus saularis</em></span></span></div>
+<div class="idx"><span class="n">13</span><span><span class="cn">红尾水鸲</span><span class="sci">Plumbeous Water Redstart · <em>Phoenicurus fuliginosus</em></span></span></div>
+<div class="idx"><span class="n">14</span><span><span class="cn">白胸苦恶鸟</span><span class="sci">White-breasted Waterhen · <em>Amaurornis phoenicurus</em></span></span></div>
+<div class="idx"><span class="n">15</span><span><span class="cn">小䴙䴘</span><span class="sci">Little Grebe · <em>Tachybaptus ruficollis</em></span></span></div>
+<div class="idx"><span class="n">16</span><span><span class="cn">灰背燕尾</span><span class="sci">Slaty-backed Forktail · <em>Enicurus schistaceus</em></span></span></div>
+<div class="idx"><span class="n">17</span><span><span class="cn">大山雀</span><span class="sci">Great Tit · <em>Parus major</em></span></span></div>
+<div class="idx"><span class="n">18</span><span><span class="cn">红头长尾山雀</span><span class="sci">Black-throated Bushtit · <em>Aegithalos concinnus</em></span></span></div>
+<div class="idx"><span class="n">19</span><span><span class="cn">白鹡鸰</span><span class="sci">White Wagtail · <em>Motacilla alba</em></span></span></div>
+<div class="idx"><span class="n">20</span><span><span class="cn">灰鹡鸰</span><span class="sci">Grey Wagtail · <em>Motacilla cinerea</em></span></span></div>
+<div class="idx"><span class="n">21</span><span><span class="cn">星头啄木鸟</span><span class="sci">Grey-capped Pygmy Woodpecker · <em>Yungipicus canicapillus</em></span></span></div>
+<div class="idx"><span class="n">22</span><span><span class="cn">黑短脚鹎</span><span class="sci">Black Bulbul · <em>Hypsipetes leucocephalus</em></span></span></div>
+<div class="idx"><span class="n">23</span><span><span class="cn">普通翠鸟</span><span class="sci">Common Kingfisher · <em>Alcedo atthis</em></span></span></div>
+<div class="idx"><span class="n">24</span><span><span class="cn">橙腹叶鹎</span><span class="sci">Orange-bellied Leafbird · <em>Chloropsis hardwickii</em></span></span></div>
+<div class="idx"><span class="n">25</span><span><span class="cn">白头鹎</span><span class="sci">Light-vented Bulbul · <em>Pycnonotus sinensis</em></span></span></div>
+<div class="idx"><span class="n">26</span><span><span class="cn">红耳鹎</span><span class="sci">Red-whiskered Bulbul · <em>Pycnonotus jocosus</em></span></span></div>
+<div class="idx"><span class="n">27</span><span><span class="cn">领雀嘴鹎</span><span class="sci">Collared Finchbill · <em>Spizixos semitorques</em></span></span></div>
+<div class="idx"><span class="n">28</span><span><span class="cn">绿翅短脚鹎</span><span class="sci">Mountain Bulbul · <em>Ixos mcclellandii</em></span></span></div>
+<div class="idx"><span class="n">29</span><span><span class="cn">栗背短脚鹎</span><span class="sci">Chestnut Bulbul · <em>Hemixos castanonotus</em></span></span></div>
+<div class="idx"><span class="n">30</span><span><span class="cn">矶鹬</span><span class="sci">Common Sandpiper · <em>Actitis hypoleucos</em></span></span></div>
+<div class="idx"><span class="n">31</span><span><span class="cn">丝光椋鸟</span><span class="sci">Red-billed Starling · <em>Spodiopsar sericeus</em></span></span></div>
+<div class="idx"><span class="n">32</span><span><span class="cn">田鹨</span><span class="sci">Richard's Pipit · <em>Anthus richardi</em></span></span></div>
+<div class="idx"><span class="n">33</span><span><span class="cn">金眶鸻</span><span class="sci">Little Ringed Plover · <em>Charadrius dubius</em></span></span></div>
+<div class="idx"><span class="n">34</span><span><span class="cn">黑腹滨鹬</span><span class="sci">Dunlin · <em>Calidris alpina</em></span></span></div>
+<div class="idx"><span class="n">35</span><span><span class="cn">纯色山鹪莺</span><span class="sci">Plain Prinia · <em>Prinia inornata</em></span></span></div>
+<div class="idx"><span class="n">36</span><span><span class="cn">喜鹊</span><span class="sci">Oriental Magpie · <em>Pica serica</em></span></span></div>
+<div class="idx"><span class="n">37</span><span><span class="cn">褐翅鸦鹃</span><span class="sci">Greater Coucal · <em>Centropus sinensis</em></span></span></div>
+<div class="idx"><span class="n">38</span><span><span class="cn">黄鹡鸰</span><span class="sci">Yellow Wagtail · <em>Motacilla flava</em></span></span></div>
+<div class="idx"><span class="n">39</span><span><span class="cn">金翅雀</span><span class="sci">Grey-capped Greenfinch · <em>Chloris sinica</em></span></span></div>
+<div class="idx"><span class="n">40</span><span><span class="cn">小鹀</span><span class="sci">Little Bunting · <em>Emberiza pusilla</em></span></span></div>
+<div class="idx"><span class="n">41</span><span><span class="cn">黑翅鸢</span><span class="sci">Black-winged Kite · <em>Elanus caeruleus</em></span></span></div>
+<div class="idx"><span class="n">42</span><span><span class="cn">麻雀</span><span class="sci">Eurasian Tree Sparrow · <em>Passer montanus</em></span></span></div>
+<div class="idx"><span class="n">43</span><span><span class="cn">牛背鹭</span><span class="sci">Cattle Egret · <em>Bubulcus ibis</em></span></span></div>
+<div class="idx"><span class="n">44</span><span><span class="cn">白琵鹭</span><span class="sci">Eurasian Spoonbill · <em>Platalea leucorodia</em></span></span></div>
+<div class="idx"><span class="n">45</span><span><span class="cn">斑嘴鸭</span><span class="sci">Spot-billed Duck · <em>Anas zonorhyncha</em></span></span></div>
+<div class="idx"><span class="n">46</span><span><span class="cn">赤颈鸭</span><span class="sci">Eurasian Wigeon · <em>Mareca penelope</em></span></span></div>
+<div class="idx"><span class="n">47</span><span><span class="cn">绿翅鸭</span><span class="sci">Eurasian Teal · <em>Anas crecca</em></span></span></div>
+<div class="idx"><span class="n">48</span><span><span class="cn">棕背伯劳</span><span class="sci">Long-tailed Shrike · <em>Lanius schach</em></span></span></div>
+<div class="idx"><span class="n">49</span><span><span class="cn">红隼</span><span class="sci">Common Kestrel · <em>Falco tinnunculus</em></span></span></div>
+<div class="idx"><span class="n">50</span><span><span class="cn">苍鹭</span><span class="sci">Grey Heron · <em>Ardea cinerea</em></span></span></div>
+<div class="idx"><span class="n">51</span><span><span class="cn">八哥</span><span class="sci">Crested Myna · <em>Acridotheres cristatellus</em></span></span></div>
+<div class="idx"><span class="n">52</span><span><span class="cn">灰背伯劳</span><span class="sci">Grey-backed Shrike · <em>Lanius tephronotus</em></span></span></div>
+<div class="idx"><span class="n">53</span><span><span class="cn">山斑鸠</span><span class="sci">Oriental Turtle Dove · <em>Streptopelia orientalis</em></span></span></div>
+<div class="idx"><span class="n">54</span><span><span class="cn">白鹤</span><span class="sci">Siberian Crane · <em>Leucogeranus leucogeranus</em></span></span></div>
+<div class="idx"><span class="n">55</span><span><span class="cn">普通鸬鹚</span><span class="sci">Great Cormorant · <em>Phalacrocorax carbo</em></span></span></div>
+<div class="idx"><span class="n">56</span><span><span class="cn">红嘴鸥</span><span class="sci">Black-headed Gull · <em>Chroicocephalus ridibundus</em></span></span></div>
+<div class="idx"><span class="n">57</span><span><span class="cn">大白鹭</span><span class="sci">Great Egret · <em>Ardea alba</em></span></span></div>
+<div class="idx"><span class="n">58</span><span><span class="cn">游隼</span><span class="sci">Peregrine Falcon · <em>Falco peregrinus</em></span></span></div>
+<div class="idx"><span class="n">59</span><span><span class="cn">黑鸢</span><span class="sci">Black Kite · <em>Milvus migrans</em></span></span></div>
+<div class="idx"><span class="n">60</span><span><span class="cn">青脚鹬</span><span class="sci">Common Greenshank · <em>Tringa nebularia</em></span></span></div>
+<div class="idx"><span class="n">61</span><span><span class="cn">黑嘴鸥</span><span class="sci">Saunders's Gull · <em>Chroicocephalus saundersi</em></span></span></div>
+<div class="idx"><span class="n">62</span><span><span class="cn">西伯利亚银鸥</span><span class="sci">Slaty-backed Gull · <em>Larus schistisagus</em></span></span></div>
+<div class="idx"><span class="n">63</span><span><span class="cn">黑水鸡</span><span class="sci">Common Moorhen · <em>Gallinula chloropus</em></span></span></div>
+<div class="idx"><span class="n">64</span><span><span class="cn">扇尾沙锥</span><span class="sci">Common Snipe · <em>Gallinago gallinago</em></span></span></div>
+<div class="idx"><span class="n">65</span><span><span class="cn">灰椋鸟</span><span class="sci">White-cheeked Starling · <em>Spodiopsar cineraceus</em></span></span></div>
+<div class="idx"><span class="n">66</span><span><span class="cn">灰斑鸻</span><span class="sci">Grey Plover · <em>Pluvialis squatarola</em></span></span></div>
+<div class="idx"><span class="n">67</span><span><span class="cn">黑尾塍鹬</span><span class="sci">Black-tailed Godwit · <em>Limosa limosa</em></span></span></div>
+<div class="idx"><span class="n">68</span><span><span class="cn">凤头麦鸡</span><span class="sci">Northern Lapwing · <em>Vanellus vanellus</em></span></span></div>
+<div class="idx"><span class="n">69</span><span><span class="cn">黑翅长脚鹬</span><span class="sci">Black-winged Stilt · <em>Himantopus himantopus</em></span></span></div>
+<div class="idx"><span class="n">70</span><span><span class="cn">鸿雁</span><span class="sci">Swan Goose · <em>Anser cygnoides</em></span></span></div>
+<div class="idx"><span class="n">71</span><span><span class="cn">针尾鸭</span><span class="sci">Northern Pintail · <em>Anas acuta</em></span></span></div>
+<div class="idx"><span class="n">72</span><span><span class="cn">豆雁</span><span class="sci">Taiga Bean Goose · <em>Anser fabalis</em></span></span></div>
+<div class="idx"><span class="n">73</span><span><span class="cn">小天鹅</span><span class="sci">Tundra Swan · <em>Cygnus columbianus</em></span></span></div>
+<div class="idx"><span class="n">74</span><span><span class="cn">绿头鸭</span><span class="sci">Mallard · <em>Anas platyrhynchos</em></span></span></div>
+<div class="idx"><span class="n">75</span><span><span class="cn">反嘴鹬</span><span class="sci">Pied Avocet · <em>Recurvirostra avosetta</em></span></span></div>
+<div class="idx"><span class="n">76</span><span><span class="cn">斑尾塍鹬</span><span class="sci">Bar-tailed Godwit · <em>Limosa lapponica</em></span></span></div>
+<div class="idx"><span class="n">77</span><span><span class="cn">红嘴相思鸟</span><span class="sci">Red-billed Leiothrix · <em>Leiothrix lutea</em></span></span></div>
+<div class="idx"><span class="n">78</span><span><span class="cn">暗绿绣眼鸟</span><span class="sci">Japanese White-eye · <em>Zosterops japonicus</em></span></span></div>
+<div class="idx"><span class="n">79</span><span><span class="cn">虎纹伯劳</span><span class="sci">Tiger Shrike · <em>Lanius tigrinus</em></span></span></div>
+<div class="idx"><span class="n">80</span><span><span class="cn">鸲姬鹟</span><span class="sci">Mugimaki Flycatcher · <em>Ficedula mugimaki</em></span></span></div>
+<div class="idx"><span class="n">81</span><span><span class="cn">北红尾鸲</span><span class="sci">Daurian Redstart · <em>Phoenicurus auroreus</em></span></span></div>
+<div class="idx"><span class="n">82</span><span><span class="cn">蓝矶鸫</span><span class="sci">Blue Rock-Thrush · <em>Monticola solitarius</em></span></span></div>
+<div class="idx"><span class="n">83</span><span><span class="cn">戴菊</span><span class="sci">Goldcrest · <em>Regulus regulus</em></span></span></div>
+<div class="idx"><span class="n">84</span><span><span class="cn">普通䴓</span><span class="sci">Eurasian Nuthatch · <em>Sitta europaea</em></span></span></div>
+<div class="idx"><span class="n">85</span><span><span class="cn">栗头鹟莺</span><span class="sci">Chestnut-crowned Warbler · <em>Phylloscopus castaniceps</em></span></span></div>
+<div class="idx"><span class="n">86</span><span><span class="cn">紫啸鸫</span><span class="sci">Blue Whistling-Thrush · <em>Myophonus caeruleus</em></span></span></div>
+<div class="idx"><span class="n">87</span><span><span class="cn">远东树莺</span><span class="sci">Manchurian Bush Warbler · <em>Horornis canturians</em></span></span></div>
+  </div>
 </details>
 
-<!-- 01 马尾闽江滨 -->
-<details class="bw-site" style="--accent:#4a7ba6" id="mawei">
-<summary>01 · 马尾闽江滨 · Mawei Minjiang Riverside <em>— Fuzhou, Fujian · 2026</em></summary>
+<section class="log" id="mawei">
+  <header class="log-head">
+    <span class="log-no">01</span>
+    <div>
+      <h2>马尾闽江滨</h2>
+      <p class="log-sub">Mawei Minjiang Riverside<span class="sep">—</span>Fuzhou, Fujian · 2026</p>
+    </div>
+  </header>
+  <div class="plates">
+    <figure class="plate">
+      <img src="images/chinese-blackbird.jpg" alt="乌鸫 Chinese Blackbird" loading="lazy">
+      <figcaption>
+        <span class="cn">乌鸫</span>
+        <span class="sci"><em>Turdus mandarinus</em></span>
+        <span class="en">Chinese Blackbird</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/leaf-warbler.jpg" alt="柳莺 Leaf Warbler" loading="lazy">
+      <figcaption>
+        <span class="cn">柳莺</span>
+        <span class="sci"><em>Phylloscopus</em></span>
+        <span class="en">Leaf Warbler</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/white-breasted-waterhen.jpg" alt="白胸苦恶鸟 White-breasted Waterhen" loading="lazy">
+      <figcaption>
+        <span class="cn">白胸苦恶鸟</span>
+        <span class="sci"><em>Amaurornis phoenicurus</em></span>
+        <span class="en">White-breasted Waterhen</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/little-egret.jpg" alt="白鹭 Little Egret" loading="lazy">
+      <figcaption>
+        <span class="cn">白鹭</span>
+        <span class="sci"><em>Egretta garzetta</em></span>
+        <span class="en">Little Egret</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/common-greenshank.jpg" alt="青脚鹬 Common Greenshank" loading="lazy">
+      <figcaption>
+        <span class="cn">青脚鹬</span>
+        <span class="sci"><em>Tringa nebularia</em></span>
+        <span class="en">Common Greenshank</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/yellow-wagtail.jpg" alt="黄鹡鸰 Yellow Wagtail" loading="lazy">
+      <figcaption>
+        <span class="cn">黄鹡鸰</span>
+        <span class="sci"><em>Motacilla flava</em></span>
+        <span class="en">Yellow Wagtail</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+<section class="log" id="forest">
+  <header class="log-head">
+    <span class="log-no">02</span>
+    <div>
+      <h2>森林公园与塔礁洲湿地</h2>
+      <p class="log-sub">Fuzhou National Forest Park &amp;amp; Tajiangzhou Wetland<span class="sep">—</span>Fuzhou, Fujian · 2026</p>
+    </div>
+  </header>
+  <div class="plates">
+    <figure class="plate">
+      <img src="images/pied-kingfisher.jpg" alt="斑鱼狗 Pied Kingfisher" loading="lazy">
+      <figcaption>
+        <span class="cn">斑鱼狗</span>
+        <span class="sci"><em>Ceryle rudis</em></span>
+        <span class="en">Pied Kingfisher</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/slaty-backed-forktail.jpg" alt="灰背燕尾 Slaty-backed Forktail" loading="lazy">
+      <figcaption>
+        <span class="cn">灰背燕尾</span>
+        <span class="sci"><em>Enicurus schistaceus</em></span>
+        <span class="en">Slaty-backed Forktail</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/red-billed-blue-magpie.jpg" alt="红嘴蓝鹊 Red-billed Blue Magpie" loading="lazy">
+      <figcaption>
+        <span class="cn">红嘴蓝鹊</span>
+        <span class="sci"><em>Urocissa erythroryncha</em></span>
+        <span class="en">Red-billed Blue Magpie</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/scarlet-minivet.jpg" alt="赤红山椒鸟 Scarlet Minivet" loading="lazy">
+      <figcaption>
+        <span class="cn">赤红山椒鸟</span>
+        <span class="sci"><em>Pericrocotus speciosus</em></span>
+        <span class="en">Scarlet Minivet</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/verditer-flycatcher.jpg" alt="铜蓝鹟 Verditer Flycatcher" loading="lazy">
+      <figcaption>
+        <span class="cn">铜蓝鹟</span>
+        <span class="sci"><em>Eumyias thalassinus</em></span>
+        <span class="en">Verditer Flycatcher</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/common-tailorbird.jpg" alt="长尾缝叶莺 Common Tailorbird" loading="lazy">
+      <figcaption>
+        <span class="cn">长尾缝叶莺</span>
+        <span class="sci"><em>Orthotomus sutorius</em></span>
+        <span class="en">Common Tailorbird</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+<section class="log" id="shantang">
+  <header class="log-head">
+    <span class="log-no">03</span>
+    <div>
+      <h2>连江山堂村</h2>
+      <p class="log-sub">Shantang Village, Lianjiang<span class="sep">—</span>Fuzhou, Fujian · 2026</p>
+    </div>
+  </header>
+  <div class="plates">
+    <figure class="plate">
+      <img src="images/daurian-redstart.jpg" alt="北红尾鸲 Daurian Redstart" loading="lazy">
+      <figcaption>
+        <span class="cn">北红尾鸲</span>
+        <span class="sci"><em>Phoenicurus auroreus</em></span>
+        <span class="en">Daurian Redstart</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/eurasian-tree-sparrow.jpg" alt="树麻雀 Eurasian Tree Sparrow" loading="lazy">
+      <figcaption>
+        <span class="cn">树麻雀</span>
+        <span class="sci"><em>Passer montanus</em></span>
+        <span class="en">Eurasian Tree Sparrow</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/long-tailed-shrike.jpg" alt="棕背伯劳 Long-tailed Shrike" loading="lazy">
+      <figcaption>
+        <span class="cn">棕背伯劳</span>
+        <span class="sci"><em>Lanius schach</em></span>
+        <span class="en">Long-tailed Shrike</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/cattle-egret.jpg" alt="牛背鹭 Cattle Egret" loading="lazy">
+      <figcaption>
+        <span class="cn">牛背鹭</span>
+        <span class="sci"><em>Bubulcus ibis</em></span>
+        <span class="en">Cattle Egret</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/siberian-crane.jpg" alt="白鹤 Siberian Crane" loading="lazy">
+      <figcaption>
+        <span class="cn">白鹤</span>
+        <span class="sci"><em>Leucogeranus leucogeranus</em></span>
+        <span class="en">Siberian Crane</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/common-stonechat.jpg" alt="黑喉石鵖 Common Stonechat" loading="lazy">
+      <figcaption>
+        <span class="cn">黑喉石鵖</span>
+        <span class="sci"><em>Saxicola torquatus</em></span>
+        <span class="en">Common Stonechat</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+<section class="log" id="xinghua">
+  <header class="log-head">
+    <span class="log-no">04</span>
+    <div>
+      <h2>兴化湾与闽江河口湿地</h2>
+      <p class="log-sub">Xinghua Bay &amp;amp; Minjiang Estuary Wetland<span class="sep">—</span>Fujian · 2026</p>
+    </div>
+  </header>
+  <div class="plates">
+    <figure class="plate">
+      <img src="images/pied-avocet.jpg" alt="反嘴鹬 Pied Avocet" loading="lazy">
+      <figcaption>
+        <span class="cn">反嘴鹬</span>
+        <span class="sci"><em>Recurvirostra avosetta</em></span>
+        <span class="en">Pied Avocet</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/tundra-swan.jpg" alt="小天鹅 Tundra Swan" loading="lazy">
+      <figcaption>
+        <span class="cn">小天鹅</span>
+        <span class="sci"><em>Cygnus columbianus</em></span>
+        <span class="en">Tundra Swan</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/eurasian-spoonbill.jpg" alt="白琵鹭 Eurasian Spoonbill" loading="lazy">
+      <figcaption>
+        <span class="cn">白琵鹭</span>
+        <span class="sci"><em>Platalea leucorodia</em></span>
+        <span class="en">Eurasian Spoonbill</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/common-kestrel.jpg" alt="红隼 Common Kestrel" loading="lazy">
+      <figcaption>
+        <span class="cn">红隼</span>
+        <span class="sci"><em>Falco tinnunculus</em></span>
+        <span class="en">Common Kestrel</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/swan-goose.jpg" alt="鸿雁 Swan Goose" loading="lazy">
+      <figcaption>
+        <span class="cn">鸿雁</span>
+        <span class="sci"><em>Anser cygnoides</em></span>
+        <span class="en">Swan Goose</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+<section class="log" id="xihu">
+  <header class="log-head">
+    <span class="log-no">05</span>
+    <div>
+      <h2>福州西湖</h2>
+      <p class="log-sub">West Lake<span class="sep">—</span>Fuzhou, Fujian · 2026-05-02</p>
+    </div>
+  </header>
+  <p class="soon">照片整理中 · 这一批还没整理上来</p>
+</section>
+<section class="log" id="guling">
+  <header class="log-head">
+    <span class="log-no">06</span>
+    <div>
+      <h2>鼓岭</h2>
+      <p class="log-sub">Guling<span class="sep">—</span>Fuzhou, Fujian · 2026-07-05</p>
+    </div>
+  </header>
+  <p class="soon">照片整理中 · 这一批还没整理上来</p>
+</section>
+<section class="log" id="fafu">
+  <header class="log-head">
+    <span class="log-no">07</span>
+    <div>
+      <h2>福建农林大学</h2>
+      <p class="log-sub">Fujian Agriculture and Forestry University<span class="sep">—</span>Fuzhou, Fujian · 2026-08-15</p>
+    </div>
+  </header>
+  <p class="soon">照片整理中 · 这一批还没整理上来</p>
+</section>
+<section class="log" id="dongtan">
+  <header class="log-head">
+    <span class="log-no">08</span>
+    <div>
+      <h2>崇明东滩湿地</h2>
+      <p class="log-sub">Chongming Dongtan Wetland<span class="sep">—</span>Shanghai · 2026-09-25</p>
+    </div>
+  </header>
+  <p class="soon">照片整理中 · 这一批还没整理上来</p>
+</section>
+<section class="log" id="shouxi">
+  <header class="log-head">
+    <span class="log-no">09</span>
+    <div>
+      <h2>莆田绶溪公园</h2>
+      <p class="log-sub">Shouxi Park<span class="sep">—</span>Putian, Fujian · 2026-10-02</p>
+    </div>
+  </header>
+  <p class="soon">照片整理中 · 这一批还没整理上来</p>
+</section>
 
-<div class="bw-grid">
+<section class="notes">
+  <header class="log-head">
+    <span class="log-no">10</span>
+    <div>
+      <h2>观鸟记录与环境思考</h2>
+      <p class="log-sub">Field Notes</p>
+    </div>
+  </header>
+  <div class="body">
+    <p>Before I started birdwatching with my mom and an instructor from the Fujian Birdwatching Association, I had never deeply explored the natural environment around my hometown, Fuzhou. Birdwatching has given me a great opportunity to appreciate the beauty of nature and enjoy its diverse landscapes.</p>
+<p>However, I have also noticed conflicts between human activities and wildlife. Some farmers set up bird nets around their fields to protect their crops. Meanwhile, the expansion of salt farms and industrial zones along the coast has encroached on wildlife habitats. My fellow birdwatchers have told me that both bird diversity and the number of birds we can observe have been decreasing year by year.</p>
+<p>Humans still need to find a balance between economic development and environmental protection.</p>
+  </div>
+</section>
 
-<div class="bw-card"><img src="images/chinese-blackbird.jpg" alt="乌鸫 Chinese Blackbird"><div class="bw-card-body"><span class="bw-card-en">Chinese Blackbird</span><span class="bw-card-cn">乌鸫</span><div class="bw-card-sci"><em>Turdus mandarinus</em></div></div></div>
-<div class="bw-card"><img src="images/leaf-warbler.jpg" alt="柳莺 Leaf Warbler"><div class="bw-card-body"><span class="bw-card-en">Leaf Warbler</span><span class="bw-card-cn">柳莺</span><div class="bw-card-sci"><em>Phylloscopus</em></div></div></div>
-<div class="bw-card"><img src="images/white-breasted-waterhen.jpg" alt="白胸苦恶鸟 White-breasted Waterhen"><div class="bw-card-body"><span class="bw-card-en">White-breasted Waterhen</span><span class="bw-card-cn">白胸苦恶鸟</span><div class="bw-card-sci"><em>Amaurornis phoenicurus</em></div></div></div>
-<div class="bw-card"><img src="images/little-egret.jpg" alt="白鹭 Little Egret"><div class="bw-card-body"><span class="bw-card-en">Little Egret</span><span class="bw-card-cn">白鹭</span><div class="bw-card-sci"><em>Egretta garzetta</em></div></div></div>
-<div class="bw-card"><img src="images/common-greenshank.jpg" alt="青脚鹬 Common Greenshank"><div class="bw-card-body"><span class="bw-card-en">Common Greenshank</span><span class="bw-card-cn">青脚鹬</span><div class="bw-card-sci"><em>Tringa nebularia</em></div></div></div>
-<div class="bw-card"><img src="images/yellow-wagtail.jpg" alt="黄鹡鸰 Yellow Wagtail"><div class="bw-card-body"><span class="bw-card-en">Yellow Wagtail</span><span class="bw-card-cn">黄鹡鸰</span><div class="bw-card-sci"><em>Motacilla flava</em></div></div></div>
-
+<div class="acgn">
+  <img src="images/virtuosa.jpg" alt="塑心壁纸 Virtuosa" loading="lazy">
+  <p class="cap">My favorite ACGN character — Virtuosa from Arknights.</p>
 </div>
 
-</details>
+<footer class="foot">
+  <span>Leochen-cms.github.io</span>
+  <span>观鸟手记 · Fujian</span>
+</footer>
 
-<!-- 02 森林公园与塔礁洲湿地 -->
-<details class="bw-site" style="--accent:#5b8a52" id="forest">
-<summary>02 · 森林公园与塔礁洲湿地 · Fuzhou National Forest Park &amp; Tajiangzhou Wetland <em>— Fuzhou, Fujian · 2026</em></summary>
-
-<div class="bw-grid">
-
-<div class="bw-card"><img src="images/pied-kingfisher.jpg" alt="斑鱼狗 Pied Kingfisher"><div class="bw-card-body"><span class="bw-card-en">Pied Kingfisher</span><span class="bw-card-cn">斑鱼狗</span><div class="bw-card-sci"><em>Ceryle rudis</em></div></div></div>
-<div class="bw-card"><img src="images/slaty-backed-forktail.jpg" alt="灰背燕尾 Slaty-backed Forktail"><div class="bw-card-body"><span class="bw-card-en">Slaty-backed Forktail</span><span class="bw-card-cn">灰背燕尾</span><div class="bw-card-sci"><em>Enicurus schistaceus</em></div></div></div>
-<div class="bw-card"><img src="images/red-billed-blue-magpie.jpg" alt="红嘴蓝鹊 Red-billed Blue Magpie"><div class="bw-card-body"><span class="bw-card-en">Red-billed Blue Magpie</span><span class="bw-card-cn">红嘴蓝鹊</span><div class="bw-card-sci"><em>Urocissa erythroryncha</em></div></div></div>
-<div class="bw-card"><img src="images/scarlet-minivet.jpg" alt="赤红山椒鸟 Scarlet Minivet"><div class="bw-card-body"><span class="bw-card-en">Scarlet Minivet</span><span class="bw-card-cn">赤红山椒鸟</span><div class="bw-card-sci"><em>Pericrocotus speciosus</em></div></div></div>
-<div class="bw-card"><img src="images/verditer-flycatcher.jpg" alt="铜蓝鹟 Verditer Flycatcher"><div class="bw-card-body"><span class="bw-card-en">Verditer Flycatcher</span><span class="bw-card-cn">铜蓝鹟</span><div class="bw-card-sci"><em>Eumyias thalassinus</em></div></div></div>
-<div class="bw-card"><img src="images/common-tailorbird.jpg" alt="长尾缝叶莺 Common Tailorbird"><div class="bw-card-body"><span class="bw-card-en">Common Tailorbird</span><span class="bw-card-cn">长尾缝叶莺</span><div class="bw-card-sci"><em>Orthotomus sutorius</em></div></div></div>
-
-</div>
-
-</details>
-
-<!-- 03 连江山堂村 -->
-<details class="bw-site" style="--accent:#b07a3e" id="shantang">
-<summary>03 · 连江山堂村 · Shantang Village, Lianjiang <em>— Fuzhou, Fujian · 2026</em></summary>
-
-<div class="bw-grid">
-
-<div class="bw-card"><img src="images/daurian-redstart.jpg" alt="北红尾鸲 Daurian Redstart"><div class="bw-card-body"><span class="bw-card-en">Daurian Redstart</span><span class="bw-card-cn">北红尾鸲</span><div class="bw-card-sci"><em>Phoenicurus auroreus</em></div></div></div>
-<div class="bw-card"><img src="images/eurasian-tree-sparrow.jpg" alt="树麻雀 Eurasian Tree Sparrow"><div class="bw-card-body"><span class="bw-card-en">Eurasian Tree Sparrow</span><span class="bw-card-cn">树麻雀</span><div class="bw-card-sci"><em>Passer montanus</em></div></div></div>
-<div class="bw-card"><img src="images/long-tailed-shrike.jpg" alt="棕背伯劳 Long-tailed Shrike"><div class="bw-card-body"><span class="bw-card-en">Long-tailed Shrike</span><span class="bw-card-cn">棕背伯劳</span><div class="bw-card-sci"><em>Lanius schach</em></div></div></div>
-<div class="bw-card"><img src="images/cattle-egret.jpg" alt="牛背鹭 Cattle Egret"><div class="bw-card-body"><span class="bw-card-en">Cattle Egret</span><span class="bw-card-cn">牛背鹭</span><div class="bw-card-sci"><em>Bubulcus ibis</em></div></div></div>
-<div class="bw-card"><img src="images/siberian-crane.jpg" alt="白鹤 Siberian Crane"><div class="bw-card-body"><span class="bw-card-en">Siberian Crane</span><span class="bw-card-cn">白鹤</span><div class="bw-card-sci"><em>Leucogeranus leucogeranus</em></div></div></div>
-<div class="bw-card"><img src="images/common-stonechat.jpg" alt="黑喉石鵖 Common Stonechat"><div class="bw-card-body"><span class="bw-card-en">Common Stonechat</span><span class="bw-card-cn">黑喉石鵖</span><div class="bw-card-sci"><em>Saxicola torquatus</em></div></div></div>
-
-</div>
-
-</details>
-
-<!-- 04 兴化湾与闽江河口湿地 -->
-<details class="bw-site" style="--accent:#7a5fa0" id="xinghua">
-<summary>04 · 兴化湾与闽江河口湿地 · Xinghua Bay &amp; Minjiang Estuary Wetland <em>— Fujian · 2026</em></summary>
-
-<div class="bw-grid">
-
-<div class="bw-card"><img src="images/pied-avocet.jpg" alt="反嘴鹬 Pied Avocet"><div class="bw-card-body"><span class="bw-card-en">Pied Avocet</span><span class="bw-card-cn">反嘴鹬</span><div class="bw-card-sci"><em>Recurvirostra avosetta</em></div></div></div>
-<div class="bw-card"><img src="images/tundra-swan.jpg" alt="小天鹅 Tundra Swan"><div class="bw-card-body"><span class="bw-card-en">Tundra Swan</span><span class="bw-card-cn">小天鹅</span><div class="bw-card-sci"><em>Cygnus columbianus</em></div></div></div>
-<div class="bw-card"><img src="images/eurasian-spoonbill.jpg" alt="白琵鹭 Eurasian Spoonbill"><div class="bw-card-body"><span class="bw-card-en">Eurasian Spoonbill</span><span class="bw-card-cn">白琵鹭</span><div class="bw-card-sci"><em>Platalea leucorodia</em></div></div></div>
-<div class="bw-card"><img src="images/common-kestrel.jpg" alt="红隼 Common Kestrel"><div class="bw-card-body"><span class="bw-card-en">Common Kestrel</span><span class="bw-card-cn">红隼</span><div class="bw-card-sci"><em>Falco tinnunculus</em></div></div></div>
-<div class="bw-card"><img src="images/swan-goose.jpg" alt="鸿雁 Swan Goose"><div class="bw-card-body"><span class="bw-card-en">Swan Goose</span><span class="bw-card-cn">鸿雁</span><div class="bw-card-sci"><em>Anser cygnoides</em></div></div></div>
-
-</div>
-
-</details>
-
-<!-- 05 福州西湖 -->
-<details class="bw-site" style="--accent:#3f8f8a" id="xihu">
-<summary>05 · 福州西湖 · West Lake <em>— Fuzhou, Fujian · 2026-05-02</em></summary>
-
-<div class="bw-grid">
-
-<!-- 待补卡片：20260502福州西湖 -->
-<p class="bw-empty">照片整理中 · Photos coming soon</p>
-
-</div>
-
-</details>
-
-<!-- 06 鼓岭 -->
-<details class="bw-site" style="--accent:#6f8f3c" id="guling">
-<summary>06 · 鼓岭 · Guling <em>— Fuzhou, Fujian · 2026-07-05</em></summary>
-
-<div class="bw-grid">
-
-<!-- 待补卡片：7月5日鼓岭 -->
-<p class="bw-empty">照片整理中 · Photos coming soon</p>
-
-</div>
-
-</details>
-
-<!-- 07 福建农林大学 -->
-<details class="bw-site" style="--accent:#b0603c" id="fafu">
-<summary>07 · 福建农林大学 · Fujian Agriculture and Forestry University <em>— Fuzhou, Fujian · 2026-08-15</em></summary>
-
-<div class="bw-grid">
-
-<!-- 待补卡片：8月15日福建农林大学 -->
-<p class="bw-empty">照片整理中 · Photos coming soon</p>
-
-</div>
-
-</details>
-
-<!-- 08 崇明东滩 -->
-<details class="bw-site" style="--accent:#5f6fa8" id="dongtan">
-<summary>08 · 崇明东滩湿地 · Chongming Dongtan Wetland <em>— Shanghai · 2026-09-25</em></summary>
-
-<div class="bw-grid">
-
-<!-- 待补卡片：9月25日上海崇明岛东滩湿地园 -->
-<p class="bw-empty">照片整理中 · Photos coming soon</p>
-
-</div>
-
-</details>
-
-<!-- 09 莆田绶溪公园 -->
-<details class="bw-site" style="--accent:#9a5a9e" id="shouxi">
-<summary>09 · 莆田绶溪公园 · Shouxi Park <em>— Putian, Fujian · 2026-10-02</em></summary>
-
-<div class="bw-grid">
-
-<!-- 待补卡片：10月2日莆田绶溪公园 -->
-<p class="bw-empty">照片整理中 · Photos coming soon</p>
-
-</div>
-
-</details>
-
-<!-- Field Notes -->
-<details>
-<summary>Field Notes · 观鸟记录与环境思考</summary>
-
-<div class="bw-notes">
-
-Before I started birdwatching with my mom and an instructor from the Fujian Birdwatching Association, I had never deeply explored the natural environment around my hometown, Fuzhou. Birdwatching has given me a great opportunity to appreciate the beauty of nature and enjoy its diverse landscapes.
-
-However, I have also noticed conflicts between human activities and wildlife. Some farmers set up bird nets around their fields to protect their crops. Meanwhile, the expansion of salt farms and industrial zones along the coast has encroached on wildlife habitats. My fellow birdwatchers have told me that both bird diversity and the number of birds we can observe have been decreasing year by year.
-
-Humans still need to find a balance between economic development and environmental protection.
-
-</div>
-
-</details>
-
-<div class="bw-acgn">
-
-<img src="images/virtuosa.jpg" alt="塑心壁纸 Virtuosa">
-
-<em>My favorite ACGN character — Virtuosa from Arknights.</em>
-
-</div>
-
-</div>
+</main>
 </body>
 </html>
