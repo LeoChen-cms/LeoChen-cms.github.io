@@ -115,6 +115,9 @@
   color: #4d4636;
 }
 
+/* ============ 占位 ============ */
+.bw-empty { color: #8b9a94; font-size: .92em; font-style: italic; padding: 8px 4px; }
+
 /* ============ ACGN ============ */
 .bw-acgn { text-align: center; margin-top: 24px; }
 .bw-acgn img { max-width: 420px; width: 100%; }
@@ -293,6 +296,71 @@
 <div class="bw-card"><img src="images/eurasian-spoonbill.jpg" alt="白琵鹭 Eurasian Spoonbill"><div class="bw-card-body"><span class="bw-card-en">Eurasian Spoonbill</span><span class="bw-card-cn">白琵鹭</span><div class="bw-card-sci"><em>Platalea leucorodia</em></div></div></div>
 <div class="bw-card"><img src="images/common-kestrel.jpg" alt="红隼 Common Kestrel"><div class="bw-card-body"><span class="bw-card-en">Common Kestrel</span><span class="bw-card-cn">红隼</span><div class="bw-card-sci"><em>Falco tinnunculus</em></div></div></div>
 <div class="bw-card"><img src="images/swan-goose.jpg" alt="鸿雁 Swan Goose"><div class="bw-card-body"><span class="bw-card-en">Swan Goose</span><span class="bw-card-cn">鸿雁</span><div class="bw-card-sci"><em>Anser cygnoides</em></div></div></div>
+
+</div>
+
+</details>
+
+<!-- 05 福州西湖 -->
+<details class="bw-site" style="--accent:#3f8f8a" id="xihu">
+<summary>05 · 福州西湖 · West Lake <em>— Fuzhou, Fujian · 2026-05-02</em></summary>
+
+<div class="bw-grid">
+
+<!-- 待补卡片：20260502福州西湖 -->
+<p class="bw-empty">照片整理中 · Photos coming soon</p>
+
+</div>
+
+</details>
+
+<!-- 06 鼓岭 -->
+<details class="bw-site" style="--accent:#6f8f3c" id="guling">
+<summary>06 · 鼓岭 · Guling <em>— Fuzhou, Fujian · 2026-07-05</em></summary>
+
+<div class="bw-grid">
+
+<!-- 待补卡片：7月5日鼓岭 -->
+<p class="bw-empty">照片整理中 · Photos coming soon</p>
+
+</div>
+
+</details>
+
+<!-- 07 福建农林大学 -->
+<details class="bw-site" style="--accent:#b0603c" id="fafu">
+<summary>07 · 福建农林大学 · Fujian Agriculture and Forestry University <em>— Fuzhou, Fujian · 2026-08-15</em></summary>
+
+<div class="bw-grid">
+
+<!-- 待补卡片：8月15日福建农林大学 -->
+<p class="bw-empty">照片整理中 · Photos coming soon</p>
+
+</div>
+
+</details>
+
+<!-- 08 崇明东滩 -->
+<details class="bw-site" style="--accent:#5f6fa8" id="dongtan">
+<summary>08 · 崇明东滩湿地 · Chongming Dongtan Wetland <em>— Shanghai · 2026-09-25</em></summary>
+
+<div class="bw-grid">
+
+<!-- 待补卡片：9月25日上海崇明岛东滩湿地园 -->
+<p class="bw-empty">照片整理中 · Photos coming soon</p>
+
+</div>
+
+</details>
+
+<!-- 09 莆田绶溪公园 -->
+<details class="bw-site" style="--accent:#9a5a9e" id="shouxi">
+<summary>09 · 莆田绶溪公园 · Shouxi Park <em>— Putian, Fujian · 2026-10-02</em></summary>
+
+<div class="bw-grid">
+
+<!-- 待补卡片：10月2日莆田绶溪公园 -->
+<p class="bw-empty">照片整理中 · Photos coming soon</p>
 
 </div>
 
