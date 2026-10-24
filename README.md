@@ -237,12 +237,12 @@
 
 <div class="bw-grid">
 
-<div class="bw-card"><img src="images/乌鸫_compressed.JPG" alt="乌鸫 Chinese Blackbird"><div class="bw-card-body"><span class="bw-card-en">Chinese Blackbird</span><span class="bw-card-cn">乌鸫</span><div class="bw-card-sci"><em>Turdus mandarinus</em></div></div></div>
-<div class="bw-card"><img src="images/柳莺Phylloscopus_compressed.JPG" alt="柳莺 Leaf Warbler"><div class="bw-card-body"><span class="bw-card-en">Leaf Warbler</span><span class="bw-card-cn">柳莺</span><div class="bw-card-sci"><em>Phylloscopus</em></div></div></div>
-<div class="bw-card"><img src="images/白胸苦恶鸟_compressed.JPG" alt="白胸苦恶鸟 White-breasted Waterhen"><div class="bw-card-body"><span class="bw-card-en">White-breasted Waterhen</span><span class="bw-card-cn">白胸苦恶鸟</span><div class="bw-card-sci"><em>Amaurornis phoenicurus</em></div></div></div>
-<div class="bw-card"><img src="images/白鹭2_compressed.JPG" alt="白鹭 Little Egret"><div class="bw-card-body"><span class="bw-card-en">Little Egret</span><span class="bw-card-cn">白鹭</span><div class="bw-card-sci"><em>Egretta garzetta</em></div></div></div>
-<div class="bw-card"><img src="images/青脚鹬_compressed.JPG" alt="青脚鹬 Common Greenshank"><div class="bw-card-body"><span class="bw-card-en">Common Greenshank</span><span class="bw-card-cn">青脚鹬</span><div class="bw-card-sci"><em>Tringa nebularia</em></div></div></div>
-<div class="bw-card"><img src="images/黄鹡鸰_compressed.JPG" alt="黄鹡鸰 Yellow Wagtail"><div class="bw-card-body"><span class="bw-card-en">Yellow Wagtail</span><span class="bw-card-cn">黄鹡鸰</span><div class="bw-card-sci"><em>Motacilla flava</em></div></div></div>
+<div class="bw-card"><img src="images/chinese-blackbird.jpg" alt="乌鸫 Chinese Blackbird"><div class="bw-card-body"><span class="bw-card-en">Chinese Blackbird</span><span class="bw-card-cn">乌鸫</span><div class="bw-card-sci"><em>Turdus mandarinus</em></div></div></div>
+<div class="bw-card"><img src="images/leaf-warbler.jpg" alt="柳莺 Leaf Warbler"><div class="bw-card-body"><span class="bw-card-en">Leaf Warbler</span><span class="bw-card-cn">柳莺</span><div class="bw-card-sci"><em>Phylloscopus</em></div></div></div>
+<div class="bw-card"><img src="images/white-breasted-waterhen.jpg" alt="白胸苦恶鸟 White-breasted Waterhen"><div class="bw-card-body"><span class="bw-card-en">White-breasted Waterhen</span><span class="bw-card-cn">白胸苦恶鸟</span><div class="bw-card-sci"><em>Amaurornis phoenicurus</em></div></div></div>
+<div class="bw-card"><img src="images/little-egret.jpg" alt="白鹭 Little Egret"><div class="bw-card-body"><span class="bw-card-en">Little Egret</span><span class="bw-card-cn">白鹭</span><div class="bw-card-sci"><em>Egretta garzetta</em></div></div></div>
+<div class="bw-card"><img src="images/common-greenshank.jpg" alt="青脚鹬 Common Greenshank"><div class="bw-card-body"><span class="bw-card-en">Common Greenshank</span><span class="bw-card-cn">青脚鹬</span><div class="bw-card-sci"><em>Tringa nebularia</em></div></div></div>
+<div class="bw-card"><img src="images/yellow-wagtail.jpg" alt="黄鹡鸰 Yellow Wagtail"><div class="bw-card-body"><span class="bw-card-en">Yellow Wagtail</span><span class="bw-card-cn">黄鹡鸰</span><div class="bw-card-sci"><em>Motacilla flava</em></div></div></div>
 
 </div>
 
@@ -254,12 +254,12 @@
 
 <div class="bw-grid">
 
-<div class="bw-card"><img src="斑鱼狗.JPG" alt="斑鱼狗 Pied Kingfisher"><div class="bw-card-body"><span class="bw-card-en">Pied Kingfisher</span><span class="bw-card-cn">斑鱼狗</span><div class="bw-card-sci"><em>Ceryle rudis</em></div></div></div>
-<div class="bw-card"><img src="灰背燕尾2.JPG" alt="灰背燕尾 Slaty-backed Forktail"><div class="bw-card-body"><span class="bw-card-en">Slaty-backed Forktail</span><span class="bw-card-cn">灰背燕尾</span><div class="bw-card-sci"><em>Enicurus schistaceus</em></div></div></div>
-<div class="bw-card"><img src="红嘴蓝鹊.JPG" alt="红嘴蓝鹊 Red-billed Blue Magpie"><div class="bw-card-body"><span class="bw-card-en">Red-billed Blue Magpie</span><span class="bw-card-cn">红嘴蓝鹊</span><div class="bw-card-sci"><em>Urocissa erythroryncha</em></div></div></div>
-<div class="bw-card"><img src="赤红山椒鸟.JPG" alt="赤红山椒鸟 Scarlet Minivet"><div class="bw-card-body"><span class="bw-card-en">Scarlet Minivet</span><span class="bw-card-cn">赤红山椒鸟</span><div class="bw-card-sci"><em>Pericrocotus speciosus</em></div></div></div>
-<div class="bw-card"><img src="铜蓝鹟.JPG" alt="铜蓝鹟 Verditer Flycatcher"><div class="bw-card-body"><span class="bw-card-en">Verditer Flycatcher</span><span class="bw-card-cn">铜蓝鹟</span><div class="bw-card-sci"><em>Eumyias thalassinus</em></div></div></div>
-<div class="bw-card"><img src="长尾缝叶莺.JPG" alt="长尾缝叶莺 Common Tailorbird"><div class="bw-card-body"><span class="bw-card-en">Common Tailorbird</span><span class="bw-card-cn">长尾缝叶莺</span><div class="bw-card-sci"><em>Orthotomus sutorius</em></div></div></div>
+<div class="bw-card"><img src="images/pied-kingfisher.jpg" alt="斑鱼狗 Pied Kingfisher"><div class="bw-card-body"><span class="bw-card-en">Pied Kingfisher</span><span class="bw-card-cn">斑鱼狗</span><div class="bw-card-sci"><em>Ceryle rudis</em></div></div></div>
+<div class="bw-card"><img src="images/slaty-backed-forktail.jpg" alt="灰背燕尾 Slaty-backed Forktail"><div class="bw-card-body"><span class="bw-card-en">Slaty-backed Forktail</span><span class="bw-card-cn">灰背燕尾</span><div class="bw-card-sci"><em>Enicurus schistaceus</em></div></div></div>
+<div class="bw-card"><img src="images/red-billed-blue-magpie.jpg" alt="红嘴蓝鹊 Red-billed Blue Magpie"><div class="bw-card-body"><span class="bw-card-en">Red-billed Blue Magpie</span><span class="bw-card-cn">红嘴蓝鹊</span><div class="bw-card-sci"><em>Urocissa erythroryncha</em></div></div></div>
+<div class="bw-card"><img src="images/scarlet-minivet.jpg" alt="赤红山椒鸟 Scarlet Minivet"><div class="bw-card-body"><span class="bw-card-en">Scarlet Minivet</span><span class="bw-card-cn">赤红山椒鸟</span><div class="bw-card-sci"><em>Pericrocotus speciosus</em></div></div></div>
+<div class="bw-card"><img src="images/verditer-flycatcher.jpg" alt="铜蓝鹟 Verditer Flycatcher"><div class="bw-card-body"><span class="bw-card-en">Verditer Flycatcher</span><span class="bw-card-cn">铜蓝鹟</span><div class="bw-card-sci"><em>Eumyias thalassinus</em></div></div></div>
+<div class="bw-card"><img src="images/common-tailorbird.jpg" alt="长尾缝叶莺 Common Tailorbird"><div class="bw-card-body"><span class="bw-card-en">Common Tailorbird</span><span class="bw-card-cn">长尾缝叶莺</span><div class="bw-card-sci"><em>Orthotomus sutorius</em></div></div></div>
 
 </div>
 
@@ -271,12 +271,12 @@
 
 <div class="bw-grid">
 
-<div class="bw-card"><img src="北红尾鸲.JPG" alt="北红尾鸲 Daurian Redstart"><div class="bw-card-body"><span class="bw-card-en">Daurian Redstart</span><span class="bw-card-cn">北红尾鸲</span><div class="bw-card-sci"><em>Phoenicurus auroreus</em></div></div></div>
-<div class="bw-card"><img src="树麻雀.JPG" alt="树麻雀 Eurasian Tree Sparrow"><div class="bw-card-body"><span class="bw-card-en">Eurasian Tree Sparrow</span><span class="bw-card-cn">树麻雀</span><div class="bw-card-sci"><em>Passer montanus</em></div></div></div>
-<div class="bw-card"><img src="棕背伯劳.JPG" alt="棕背伯劳 Long-tailed Shrike"><div class="bw-card-body"><span class="bw-card-en">Long-tailed Shrike</span><span class="bw-card-cn">棕背伯劳</span><div class="bw-card-sci"><em>Lanius schach</em></div></div></div>
-<div class="bw-card"><img src="牛背鹭.JPG" alt="牛背鹭 Cattle Egret"><div class="bw-card-body"><span class="bw-card-en">Cattle Egret</span><span class="bw-card-cn">牛背鹭</span><div class="bw-card-sci"><em>Bubulcus ibis</em></div></div></div>
-<div class="bw-card"><img src="白鹤.JPG" alt="白鹤 Siberian Crane"><div class="bw-card-body"><span class="bw-card-en">Siberian Crane</span><span class="bw-card-cn">白鹤</span><div class="bw-card-sci"><em>Leucogeranus leucogeranus</em></div></div></div>
-<div class="bw-card"><img src="黑喉石鵖%20(2).JPG" alt="黑喉石鵖 Common Stonechat"><div class="bw-card-body"><span class="bw-card-en">Common Stonechat</span><span class="bw-card-cn">黑喉石鵖</span><div class="bw-card-sci"><em>Saxicola torquatus</em></div></div></div>
+<div class="bw-card"><img src="images/daurian-redstart.jpg" alt="北红尾鸲 Daurian Redstart"><div class="bw-card-body"><span class="bw-card-en">Daurian Redstart</span><span class="bw-card-cn">北红尾鸲</span><div class="bw-card-sci"><em>Phoenicurus auroreus</em></div></div></div>
+<div class="bw-card"><img src="images/eurasian-tree-sparrow.jpg" alt="树麻雀 Eurasian Tree Sparrow"><div class="bw-card-body"><span class="bw-card-en">Eurasian Tree Sparrow</span><span class="bw-card-cn">树麻雀</span><div class="bw-card-sci"><em>Passer montanus</em></div></div></div>
+<div class="bw-card"><img src="images/long-tailed-shrike.jpg" alt="棕背伯劳 Long-tailed Shrike"><div class="bw-card-body"><span class="bw-card-en">Long-tailed Shrike</span><span class="bw-card-cn">棕背伯劳</span><div class="bw-card-sci"><em>Lanius schach</em></div></div></div>
+<div class="bw-card"><img src="images/cattle-egret.jpg" alt="牛背鹭 Cattle Egret"><div class="bw-card-body"><span class="bw-card-en">Cattle Egret</span><span class="bw-card-cn">牛背鹭</span><div class="bw-card-sci"><em>Bubulcus ibis</em></div></div></div>
+<div class="bw-card"><img src="images/siberian-crane.jpg" alt="白鹤 Siberian Crane"><div class="bw-card-body"><span class="bw-card-en">Siberian Crane</span><span class="bw-card-cn">白鹤</span><div class="bw-card-sci"><em>Leucogeranus leucogeranus</em></div></div></div>
+<div class="bw-card"><img src="images/common-stonechat.jpg" alt="黑喉石鵖 Common Stonechat"><div class="bw-card-body"><span class="bw-card-en">Common Stonechat</span><span class="bw-card-cn">黑喉石鵖</span><div class="bw-card-sci"><em>Saxicola torquatus</em></div></div></div>
 
 </div>
 
@@ -288,11 +288,11 @@
 
 <div class="bw-grid">
 
-<div class="bw-card"><img src="反嘴鹬.JPG" alt="反嘴鹬 Pied Avocet"><div class="bw-card-body"><span class="bw-card-en">Pied Avocet</span><span class="bw-card-cn">反嘴鹬</span><div class="bw-card-sci"><em>Recurvirostra avosetta</em></div></div></div>
-<div class="bw-card"><img src="小天鹅.JPG" alt="小天鹅 Tundra Swan"><div class="bw-card-body"><span class="bw-card-en">Tundra Swan</span><span class="bw-card-cn">小天鹅</span><div class="bw-card-sci"><em>Cygnus columbianus</em></div></div></div>
-<div class="bw-card"><img src="白琵鹭.JPG" alt="白琵鹭 Eurasian Spoonbill"><div class="bw-card-body"><span class="bw-card-en">Eurasian Spoonbill</span><span class="bw-card-cn">白琵鹭</span><div class="bw-card-sci"><em>Platalea leucorodia</em></div></div></div>
-<div class="bw-card"><img src="红隼.JPG" alt="红隼 Common Kestrel"><div class="bw-card-body"><span class="bw-card-en">Common Kestrel</span><span class="bw-card-cn">红隼</span><div class="bw-card-sci"><em>Falco tinnunculus</em></div></div></div>
-<div class="bw-card"><img src="鸿雁.JPG" alt="鸿雁 Swan Goose"><div class="bw-card-body"><span class="bw-card-en">Swan Goose</span><span class="bw-card-cn">鸿雁</span><div class="bw-card-sci"><em>Anser cygnoides</em></div></div></div>
+<div class="bw-card"><img src="images/pied-avocet.jpg" alt="反嘴鹬 Pied Avocet"><div class="bw-card-body"><span class="bw-card-en">Pied Avocet</span><span class="bw-card-cn">反嘴鹬</span><div class="bw-card-sci"><em>Recurvirostra avosetta</em></div></div></div>
+<div class="bw-card"><img src="images/tundra-swan.jpg" alt="小天鹅 Tundra Swan"><div class="bw-card-body"><span class="bw-card-en">Tundra Swan</span><span class="bw-card-cn">小天鹅</span><div class="bw-card-sci"><em>Cygnus columbianus</em></div></div></div>
+<div class="bw-card"><img src="images/eurasian-spoonbill.jpg" alt="白琵鹭 Eurasian Spoonbill"><div class="bw-card-body"><span class="bw-card-en">Eurasian Spoonbill</span><span class="bw-card-cn">白琵鹭</span><div class="bw-card-sci"><em>Platalea leucorodia</em></div></div></div>
+<div class="bw-card"><img src="images/common-kestrel.jpg" alt="红隼 Common Kestrel"><div class="bw-card-body"><span class="bw-card-en">Common Kestrel</span><span class="bw-card-cn">红隼</span><div class="bw-card-sci"><em>Falco tinnunculus</em></div></div></div>
+<div class="bw-card"><img src="images/swan-goose.jpg" alt="鸿雁 Swan Goose"><div class="bw-card-body"><span class="bw-card-en">Swan Goose</span><span class="bw-card-cn">鸿雁</span><div class="bw-card-sci"><em>Anser cygnoides</em></div></div></div>
 
 </div>
 
@@ -316,7 +316,7 @@ Humans still need to find a balance between economic development and environment
 
 <div class="bw-acgn">
 
-<img src="塑心壁纸1.png" alt="塑心壁纸 Virtuosa">
+<img src="images/virtuosa.jpg" alt="塑心壁纸 Virtuosa">
 
 <em>My favorite ACGN character — Virtuosa from Arknights.</em>
 
