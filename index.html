@@ -93,6 +93,15 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
 
 .foot { margin-top:84px; padding-top:16px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; gap:20px; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--faint); }
 
+/* 名录分组 */
+.grp { grid-column:1/-1; display:flex; align-items:baseline; gap:10px; margin:26px 0 0; padding-top:12px; border-top:1px solid var(--ink); font-size:12px; letter-spacing:.2em; color:var(--ink-soft); }
+.grp .la { font-family:ui-sans-serif,-apple-system,"Helvetica Neue",Arial,sans-serif; font-size:10px; font-style:italic; letter-spacing:.08em; color:var(--faint); }
+.grp:first-child { margin-top:16px; padding-top:0; border-top:none; }
+.fam { grid-column:1/-1; display:flex; align-items:baseline; gap:10px; margin:16px 0 2px; font-size:13px; letter-spacing:.08em; color:#3a382f; }
+.fam .la { font-family:ui-sans-serif,-apple-system,"Helvetica Neue",Arial,sans-serif; font-size:10.5px; font-weight:400; font-style:italic; letter-spacing:.06em; color:var(--faint); }
+.plate .note { margin:10px 0 0; padding-left:12px; border-left:2px solid var(--rule); font-size:12.5px; line-height:1.65; color:#6f6a5c; }
+.plate .note .en2 { display:block; margin-top:5px; font-family:ui-sans-serif,-apple-system,"Helvetica Neue",Arial,sans-serif; font-size:11px; line-height:1.6; color:#9a9282; }
+
 @media (max-width:640px) {
   .sheet { padding:52px 20px 80px; }
   .toc { grid-template-columns:1fr; }
@@ -127,100 +136,152 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
 </nav>
 
 <details class="list">
-  <summary>鸟种总名录 <span class="tag">Species Checklist</span><span class="count">92 种</span><span class="tgl" aria-hidden="true"></span></summary>
+  <summary>鸟种总名录 <span class="tag">Species Checklist</span><span class="count">92 种 · 40 科 · 12 目</span><span class="tgl" aria-hidden="true"></span></summary>
   <div class="idxlist">
-<div class="idx"><span class="n">1</span><span><span class="cn">红头穗鹛</span><span class="sci">Rufous-capped Babbler · <em>Cyanoderma ruficeps</em></span></span></div>
-<div class="idx"><span class="n">2</span><span><span class="cn">黑脸噪鹛</span><span class="sci">Masked Laughingthrush · <em>Pterorhinus perspicillatus</em></span></span></div>
-<div class="idx"><span class="n">3</span><span><span class="cn">树鹨</span><span class="sci">Olive-backed Pipit · <em>Anthus hodgsoni</em></span></span></div>
-<div class="idx"><span class="n">4</span><span><span class="cn">灰树鹊</span><span class="sci">Grey Treepie · <em>Dendrocitta formosae</em></span></span></div>
-<div class="idx"><span class="n">5</span><span><span class="cn">大拟啄木鸟</span><span class="sci">Great Barbet · <em>Psilopogon virens</em></span></span></div>
-<div class="idx"><span class="n">6</span><span><span class="cn">黄腰柳莺</span><span class="sci">Pallas's Leaf Warbler · <em>Phylloscopus proregulus</em></span></span></div>
-<div class="idx"><span class="n">7</span><span><span class="cn">叉尾太阳鸟</span><span class="sci">Fork-tailed Sunbird · <em>Aethopyga christinae</em></span></span></div>
-<div class="idx"><span class="n">8</span><span><span class="cn">白鹭</span><span class="sci">Little Egret · <em>Egretta garzetta</em></span></span></div>
-<div class="idx"><span class="n">9</span><span><span class="cn">珠颈斑鸠</span><span class="sci">Spotted Dove · <em>Spilopelia chinensis</em></span></span></div>
-<div class="idx"><span class="n">10</span><span><span class="cn">乌鸫</span><span class="sci">Chinese Blackbird · <em>Turdus mandarinus</em></span></span></div>
-<div class="idx"><span class="n">11</span><span><span class="cn">灰头鹀</span><span class="sci">Black-faced Bunting · <em>Emberiza spodocephala</em></span></span></div>
-<div class="idx"><span class="n">12</span><span><span class="cn">鹊鸲</span><span class="sci">Oriental Magpie-Robin · <em>Copsychus saularis</em></span></span></div>
-<div class="idx"><span class="n">13</span><span><span class="cn">红尾水鸲</span><span class="sci">Plumbeous Water Redstart · <em>Phoenicurus fuliginosus</em></span></span></div>
-<div class="idx"><span class="n">14</span><span><span class="cn">白胸苦恶鸟</span><span class="sci">White-breasted Waterhen · <em>Amaurornis phoenicurus</em></span></span></div>
-<div class="idx"><span class="n">15</span><span><span class="cn">小䴙䴘</span><span class="sci">Little Grebe · <em>Tachybaptus ruficollis</em></span></span></div>
-<div class="idx"><span class="n">16</span><span><span class="cn">灰背燕尾</span><span class="sci">Slaty-backed Forktail · <em>Enicurus schistaceus</em></span></span></div>
-<div class="idx"><span class="n">17</span><span><span class="cn">大山雀</span><span class="sci">Great Tit · <em>Parus major</em></span></span></div>
-<div class="idx"><span class="n">18</span><span><span class="cn">红头长尾山雀</span><span class="sci">Black-throated Bushtit · <em>Aegithalos concinnus</em></span></span></div>
-<div class="idx"><span class="n">19</span><span><span class="cn">白鹡鸰</span><span class="sci">White Wagtail · <em>Motacilla alba</em></span></span></div>
-<div class="idx"><span class="n">20</span><span><span class="cn">灰鹡鸰</span><span class="sci">Grey Wagtail · <em>Motacilla cinerea</em></span></span></div>
-<div class="idx"><span class="n">21</span><span><span class="cn">星头啄木鸟</span><span class="sci">Grey-capped Pygmy Woodpecker · <em>Yungipicus canicapillus</em></span></span></div>
-<div class="idx"><span class="n">22</span><span><span class="cn">黑短脚鹎</span><span class="sci">Black Bulbul · <em>Hypsipetes leucocephalus</em></span></span></div>
-<div class="idx"><span class="n">23</span><span><span class="cn">普通翠鸟</span><span class="sci">Common Kingfisher · <em>Alcedo atthis</em></span></span></div>
-<div class="idx"><span class="n">24</span><span><span class="cn">橙腹叶鹎</span><span class="sci">Orange-bellied Leafbird · <em>Chloropsis hardwickii</em></span></span></div>
-<div class="idx"><span class="n">25</span><span><span class="cn">白头鹎</span><span class="sci">Light-vented Bulbul · <em>Pycnonotus sinensis</em></span></span></div>
-<div class="idx"><span class="n">26</span><span><span class="cn">红耳鹎</span><span class="sci">Red-whiskered Bulbul · <em>Pycnonotus jocosus</em></span></span></div>
-<div class="idx"><span class="n">27</span><span><span class="cn">领雀嘴鹎</span><span class="sci">Collared Finchbill · <em>Spizixos semitorques</em></span></span></div>
-<div class="idx"><span class="n">28</span><span><span class="cn">绿翅短脚鹎</span><span class="sci">Mountain Bulbul · <em>Ixos mcclellandii</em></span></span></div>
-<div class="idx"><span class="n">29</span><span><span class="cn">栗背短脚鹎</span><span class="sci">Chestnut Bulbul · <em>Hemixos castanonotus</em></span></span></div>
-<div class="idx"><span class="n">30</span><span><span class="cn">矶鹬</span><span class="sci">Common Sandpiper · <em>Actitis hypoleucos</em></span></span></div>
-<div class="idx"><span class="n">31</span><span><span class="cn">丝光椋鸟</span><span class="sci">Red-billed Starling · <em>Spodiopsar sericeus</em></span></span></div>
-<div class="idx"><span class="n">32</span><span><span class="cn">田鹨</span><span class="sci">Richard's Pipit · <em>Anthus richardi</em></span></span></div>
-<div class="idx"><span class="n">33</span><span><span class="cn">金眶鸻</span><span class="sci">Little Ringed Plover · <em>Charadrius dubius</em></span></span></div>
-<div class="idx"><span class="n">34</span><span><span class="cn">黑腹滨鹬</span><span class="sci">Dunlin · <em>Calidris alpina</em></span></span></div>
-<div class="idx"><span class="n">35</span><span><span class="cn">纯色山鹪莺</span><span class="sci">Plain Prinia · <em>Prinia inornata</em></span></span></div>
-<div class="idx"><span class="n">36</span><span><span class="cn">喜鹊</span><span class="sci">Oriental Magpie · <em>Pica serica</em></span></span></div>
-<div class="idx"><span class="n">37</span><span><span class="cn">褐翅鸦鹃</span><span class="sci">Greater Coucal · <em>Centropus sinensis</em></span></span></div>
-<div class="idx"><span class="n">38</span><span><span class="cn">黄鹡鸰</span><span class="sci">Yellow Wagtail · <em>Motacilla flava</em></span></span></div>
-<div class="idx"><span class="n">39</span><span><span class="cn">金翅雀</span><span class="sci">Grey-capped Greenfinch · <em>Chloris sinica</em></span></span></div>
-<div class="idx"><span class="n">40</span><span><span class="cn">小鹀</span><span class="sci">Little Bunting · <em>Emberiza pusilla</em></span></span></div>
-<div class="idx"><span class="n">41</span><span><span class="cn">黑翅鸢</span><span class="sci">Black-winged Kite · <em>Elanus caeruleus</em></span></span></div>
-<div class="idx"><span class="n">42</span><span><span class="cn">麻雀</span><span class="sci">Eurasian Tree Sparrow · <em>Passer montanus</em></span></span></div>
-<div class="idx"><span class="n">43</span><span><span class="cn">牛背鹭</span><span class="sci">Cattle Egret · <em>Bubulcus ibis</em></span></span></div>
-<div class="idx"><span class="n">44</span><span><span class="cn">白琵鹭</span><span class="sci">Eurasian Spoonbill · <em>Platalea leucorodia</em></span></span></div>
-<div class="idx"><span class="n">45</span><span><span class="cn">斑嘴鸭</span><span class="sci">Spot-billed Duck · <em>Anas zonorhyncha</em></span></span></div>
-<div class="idx"><span class="n">46</span><span><span class="cn">赤颈鸭</span><span class="sci">Eurasian Wigeon · <em>Mareca penelope</em></span></span></div>
-<div class="idx"><span class="n">47</span><span><span class="cn">绿翅鸭</span><span class="sci">Eurasian Teal · <em>Anas crecca</em></span></span></div>
-<div class="idx"><span class="n">48</span><span><span class="cn">棕背伯劳</span><span class="sci">Long-tailed Shrike · <em>Lanius schach</em></span></span></div>
-<div class="idx"><span class="n">49</span><span><span class="cn">红隼</span><span class="sci">Common Kestrel · <em>Falco tinnunculus</em></span></span></div>
-<div class="idx"><span class="n">50</span><span><span class="cn">苍鹭</span><span class="sci">Grey Heron · <em>Ardea cinerea</em></span></span></div>
-<div class="idx"><span class="n">51</span><span><span class="cn">八哥</span><span class="sci">Crested Myna · <em>Acridotheres cristatellus</em></span></span></div>
-<div class="idx"><span class="n">52</span><span><span class="cn">灰背伯劳</span><span class="sci">Grey-backed Shrike · <em>Lanius tephronotus</em></span></span></div>
-<div class="idx"><span class="n">53</span><span><span class="cn">山斑鸠</span><span class="sci">Oriental Turtle Dove · <em>Streptopelia orientalis</em></span></span></div>
-<div class="idx"><span class="n">54</span><span><span class="cn">白鹤</span><span class="sci">Siberian Crane · <em>Leucogeranus leucogeranus</em></span></span></div>
-<div class="idx"><span class="n">55</span><span><span class="cn">普通鸬鹚</span><span class="sci">Great Cormorant · <em>Phalacrocorax carbo</em></span></span></div>
-<div class="idx"><span class="n">56</span><span><span class="cn">红嘴鸥</span><span class="sci">Black-headed Gull · <em>Chroicocephalus ridibundus</em></span></span></div>
-<div class="idx"><span class="n">57</span><span><span class="cn">大白鹭</span><span class="sci">Great Egret · <em>Ardea alba</em></span></span></div>
-<div class="idx"><span class="n">58</span><span><span class="cn">游隼</span><span class="sci">Peregrine Falcon · <em>Falco peregrinus</em></span></span></div>
-<div class="idx"><span class="n">59</span><span><span class="cn">黑鸢</span><span class="sci">Black Kite · <em>Milvus migrans</em></span></span></div>
-<div class="idx"><span class="n">60</span><span><span class="cn">青脚鹬</span><span class="sci">Common Greenshank · <em>Tringa nebularia</em></span></span></div>
-<div class="idx"><span class="n">61</span><span><span class="cn">黑嘴鸥</span><span class="sci">Saunders's Gull · <em>Chroicocephalus saundersi</em></span></span></div>
-<div class="idx"><span class="n">62</span><span><span class="cn">西伯利亚银鸥</span><span class="sci">Slaty-backed Gull · <em>Larus schistisagus</em></span></span></div>
-<div class="idx"><span class="n">63</span><span><span class="cn">黑水鸡</span><span class="sci">Common Moorhen · <em>Gallinula chloropus</em></span></span></div>
-<div class="idx"><span class="n">64</span><span><span class="cn">扇尾沙锥</span><span class="sci">Common Snipe · <em>Gallinago gallinago</em></span></span></div>
-<div class="idx"><span class="n">65</span><span><span class="cn">灰椋鸟</span><span class="sci">White-cheeked Starling · <em>Spodiopsar cineraceus</em></span></span></div>
-<div class="idx"><span class="n">66</span><span><span class="cn">灰斑鸻</span><span class="sci">Grey Plover · <em>Pluvialis squatarola</em></span></span></div>
-<div class="idx"><span class="n">67</span><span><span class="cn">黑尾塍鹬</span><span class="sci">Black-tailed Godwit · <em>Limosa limosa</em></span></span></div>
-<div class="idx"><span class="n">68</span><span><span class="cn">凤头麦鸡</span><span class="sci">Northern Lapwing · <em>Vanellus vanellus</em></span></span></div>
-<div class="idx"><span class="n">69</span><span><span class="cn">黑翅长脚鹬</span><span class="sci">Black-winged Stilt · <em>Himantopus himantopus</em></span></span></div>
-<div class="idx"><span class="n">70</span><span><span class="cn">鸿雁</span><span class="sci">Swan Goose · <em>Anser cygnoides</em></span></span></div>
-<div class="idx"><span class="n">71</span><span><span class="cn">针尾鸭</span><span class="sci">Northern Pintail · <em>Anas acuta</em></span></span></div>
-<div class="idx"><span class="n">72</span><span><span class="cn">豆雁</span><span class="sci">Taiga Bean Goose · <em>Anser fabalis</em></span></span></div>
-<div class="idx"><span class="n">73</span><span><span class="cn">小天鹅</span><span class="sci">Tundra Swan · <em>Cygnus columbianus</em></span></span></div>
-<div class="idx"><span class="n">74</span><span><span class="cn">绿头鸭</span><span class="sci">Mallard · <em>Anas platyrhynchos</em></span></span></div>
-<div class="idx"><span class="n">75</span><span><span class="cn">反嘴鹬</span><span class="sci">Pied Avocet · <em>Recurvirostra avosetta</em></span></span></div>
-<div class="idx"><span class="n">76</span><span><span class="cn">斑尾塍鹬</span><span class="sci">Bar-tailed Godwit · <em>Limosa lapponica</em></span></span></div>
-<div class="idx"><span class="n">77</span><span><span class="cn">红嘴相思鸟</span><span class="sci">Red-billed Leiothrix · <em>Leiothrix lutea</em></span></span></div>
-<div class="idx"><span class="n">78</span><span><span class="cn">暗绿绣眼鸟</span><span class="sci">Japanese White-eye · <em>Zosterops japonicus</em></span></span></div>
-<div class="idx"><span class="n">79</span><span><span class="cn">虎纹伯劳</span><span class="sci">Tiger Shrike · <em>Lanius tigrinus</em></span></span></div>
-<div class="idx"><span class="n">80</span><span><span class="cn">鸲姬鹟</span><span class="sci">Mugimaki Flycatcher · <em>Ficedula mugimaki</em></span></span></div>
-<div class="idx"><span class="n">81</span><span><span class="cn">北红尾鸲</span><span class="sci">Daurian Redstart · <em>Phoenicurus auroreus</em></span></span></div>
-<div class="idx"><span class="n">82</span><span><span class="cn">蓝矶鸫</span><span class="sci">Blue Rock-Thrush · <em>Monticola solitarius</em></span></span></div>
-<div class="idx"><span class="n">83</span><span><span class="cn">戴菊</span><span class="sci">Goldcrest · <em>Regulus regulus</em></span></span></div>
-<div class="idx"><span class="n">84</span><span><span class="cn">普通䴓</span><span class="sci">Eurasian Nuthatch · <em>Sitta europaea</em></span></span></div>
-<div class="idx"><span class="n">85</span><span><span class="cn">栗头鹟莺</span><span class="sci">Chestnut-crowned Warbler · <em>Phylloscopus castaniceps</em></span></span></div>
-<div class="idx"><span class="n">86</span><span><span class="cn">紫啸鸫</span><span class="sci">Blue Whistling-Thrush · <em>Myophonus caeruleus</em></span></span></div>
-<div class="idx"><span class="n">87</span><span><span class="cn">远东树莺</span><span class="sci">Manchurian Bush Warbler · <em>Horornis canturians</em></span></span></div>
-<div class="idx"><span class="n">88</span><span><span class="cn">夜鹭</span><span class="sci">Black-crowned Night Heron · <em>Nycticorax nycticorax</em></span></span></div>
-<div class="idx"><span class="n">89</span><span><span class="cn">四声杜鹃</span><span class="sci">Indian Cuckoo · <em>Cuculus micropterus</em></span></span></div>
-<div class="idx"><span class="n">90</span><span><span class="cn">灰纹鹟</span><span class="sci">Grey-streaked Flycatcher · <em>Muscicapa griseisticta</em></span></span></div>
-<div class="idx"><span class="n">91</span><span><span class="cn">黑领椋鸟</span><span class="sci">Black-collared Starling · <em>Gracupica nigricollis</em></span></span></div>
-<div class="idx"><span class="n">92</span><span><span class="cn">红嘴蓝鹊</span><span class="sci">Red-billed Blue Magpie · <em>Urocissa erythroryncha</em></span></span></div>
+    <div class="grp">雁形目<span class="la">Anseriformes</span></div>
+    <div class="fam">鸭科<span class="la">Anatidae</span></div>
+    <div class="idx"><span class="n">1</span><span><span class="cn">鸿雁</span><span class="sci">Swan Goose · <em>Anser cygnoides</em></span></span></div>
+    <div class="idx"><span class="n">2</span><span><span class="cn">豆雁</span><span class="sci">Taiga Bean Goose · <em>Anser fabalis</em></span></span></div>
+    <div class="idx"><span class="n">3</span><span><span class="cn">小天鹅</span><span class="sci">Tundra Swan · <em>Cygnus columbianus</em></span></span></div>
+    <div class="idx"><span class="n">4</span><span><span class="cn">赤颈鸭</span><span class="sci">Eurasian Wigeon · <em>Mareca penelope</em></span></span></div>
+    <div class="idx"><span class="n">5</span><span><span class="cn">绿翅鸭</span><span class="sci">Eurasian Teal · <em>Anas crecca</em></span></span></div>
+    <div class="idx"><span class="n">6</span><span><span class="cn">针尾鸭</span><span class="sci">Northern Pintail · <em>Anas acuta</em></span></span></div>
+    <div class="idx"><span class="n">7</span><span><span class="cn">斑嘴鸭</span><span class="sci">Spot-billed Duck · <em>Anas zonorhyncha</em></span></span></div>
+    <div class="idx"><span class="n">8</span><span><span class="cn">绿头鸭</span><span class="sci">Mallard · <em>Anas platyrhynchos</em></span></span></div>
+    <div class="grp">䴙䴘目<span class="la">Podicipediformes</span></div>
+    <div class="fam">䴙䴘科<span class="la">Podicipedidae</span></div>
+    <div class="idx"><span class="n">9</span><span><span class="cn">小䴙䴘</span><span class="sci">Little Grebe · <em>Tachybaptus ruficollis</em></span></span></div>
+    <div class="grp">鸽形目<span class="la">Columbiformes</span></div>
+    <div class="fam">鸠鸽科<span class="la">Columbidae</span></div>
+    <div class="idx"><span class="n">10</span><span><span class="cn">山斑鸠</span><span class="sci">Oriental Turtle Dove · <em>Streptopelia orientalis</em></span></span></div>
+    <div class="idx"><span class="n">11</span><span><span class="cn">珠颈斑鸠</span><span class="sci">Spotted Dove · <em>Spilopelia chinensis</em></span></span></div>
+    <div class="grp">鹃形目<span class="la">Cuculiformes</span></div>
+    <div class="fam">杜鹃科<span class="la">Cuculidae</span></div>
+    <div class="idx"><span class="n">12</span><span><span class="cn">四声杜鹃</span><span class="sci">Indian Cuckoo · <em>Cuculus micropterus</em></span></span></div>
+    <div class="idx"><span class="n">13</span><span><span class="cn">褐翅鸦鹃</span><span class="sci">Greater Coucal · <em>Centropus sinensis</em></span></span></div>
+    <div class="grp">鹤形目<span class="la">Gruiformes</span></div>
+    <div class="fam">秧鸡科<span class="la">Rallidae</span></div>
+    <div class="idx"><span class="n">14</span><span><span class="cn">白胸苦恶鸟</span><span class="sci">White-breasted Waterhen · <em>Amaurornis phoenicurus</em></span></span></div>
+    <div class="idx"><span class="n">15</span><span><span class="cn">黑水鸡</span><span class="sci">Common Moorhen · <em>Gallinula chloropus</em></span></span></div>
+    <div class="fam">鹤科<span class="la">Gruidae</span></div>
+    <div class="idx"><span class="n">16</span><span><span class="cn">白鹤</span><span class="sci">Siberian Crane · <em>Leucogeranus leucogeranus</em></span></span></div>
+    <div class="grp">鸻形目<span class="la">Charadriiformes</span></div>
+    <div class="fam">反嘴鹬科<span class="la">Recurvirostridae</span></div>
+    <div class="idx"><span class="n">17</span><span><span class="cn">黑翅长脚鹬</span><span class="sci">Black-winged Stilt · <em>Himantopus himantopus</em></span></span></div>
+    <div class="idx"><span class="n">18</span><span><span class="cn">反嘴鹬</span><span class="sci">Pied Avocet · <em>Recurvirostra avosetta</em></span></span></div>
+    <div class="fam">鸻科<span class="la">Charadriidae</span></div>
+    <div class="idx"><span class="n">19</span><span><span class="cn">凤头麦鸡</span><span class="sci">Northern Lapwing · <em>Vanellus vanellus</em></span></span></div>
+    <div class="idx"><span class="n">20</span><span><span class="cn">灰斑鸻</span><span class="sci">Grey Plover · <em>Pluvialis squatarola</em></span></span></div>
+    <div class="idx"><span class="n">21</span><span><span class="cn">金眶鸻</span><span class="sci">Little Ringed Plover · <em>Charadrius dubius</em></span></span></div>
+    <div class="fam">鹬科<span class="la">Scolopacidae</span></div>
+    <div class="idx"><span class="n">22</span><span><span class="cn">扇尾沙锥</span><span class="sci">Common Snipe · <em>Gallinago gallinago</em></span></span></div>
+    <div class="idx"><span class="n">23</span><span><span class="cn">黑尾塍鹬</span><span class="sci">Black-tailed Godwit · <em>Limosa limosa</em></span></span></div>
+    <div class="idx"><span class="n">24</span><span><span class="cn">斑尾塍鹬</span><span class="sci">Bar-tailed Godwit · <em>Limosa lapponica</em></span></span></div>
+    <div class="idx"><span class="n">25</span><span><span class="cn">青脚鹬</span><span class="sci">Common Greenshank · <em>Tringa nebularia</em></span></span></div>
+    <div class="idx"><span class="n">26</span><span><span class="cn">矶鹬</span><span class="sci">Common Sandpiper · <em>Actitis hypoleucos</em></span></span></div>
+    <div class="idx"><span class="n">27</span><span><span class="cn">黑腹滨鹬</span><span class="sci">Dunlin · <em>Calidris alpina</em></span></span></div>
+    <div class="fam">鸥科<span class="la">Laridae</span></div>
+    <div class="idx"><span class="n">28</span><span><span class="cn">红嘴鸥</span><span class="sci">Black-headed Gull · <em>Chroicocephalus ridibundus</em></span></span></div>
+    <div class="idx"><span class="n">29</span><span><span class="cn">黑嘴鸥</span><span class="sci">Saunders's Gull · <em>Chroicocephalus saundersi</em></span></span></div>
+    <div class="idx"><span class="n">30</span><span><span class="cn">西伯利亚银鸥</span><span class="sci">Slaty-backed Gull · <em>Larus schistisagus</em></span></span></div>
+    <div class="grp">鹈形目<span class="la">Pelecaniformes</span></div>
+    <div class="fam">鹭科<span class="la">Ardeidae</span></div>
+    <div class="idx"><span class="n">31</span><span><span class="cn">苍鹭</span><span class="sci">Grey Heron · <em>Ardea cinerea</em></span></span></div>
+    <div class="idx"><span class="n">32</span><span><span class="cn">大白鹭</span><span class="sci">Great Egret · <em>Ardea alba</em></span></span></div>
+    <div class="idx"><span class="n">33</span><span><span class="cn">白鹭</span><span class="sci">Little Egret · <em>Egretta garzetta</em></span></span></div>
+    <div class="idx"><span class="n">34</span><span><span class="cn">牛背鹭</span><span class="sci">Cattle Egret · <em>Bubulcus ibis</em></span></span></div>
+    <div class="idx"><span class="n">35</span><span><span class="cn">夜鹭</span><span class="sci">Black-crowned Night Heron · <em>Nycticorax nycticorax</em></span></span></div>
+    <div class="fam">鹮科<span class="la">Threskiornithidae</span></div>
+    <div class="idx"><span class="n">36</span><span><span class="cn">白琵鹭</span><span class="sci">Eurasian Spoonbill · <em>Platalea leucorodia</em></span></span></div>
+    <div class="fam">鸬鹚科<span class="la">Phalacrocoracidae</span></div>
+    <div class="idx"><span class="n">37</span><span><span class="cn">普通鸬鹚</span><span class="sci">Great Cormorant · <em>Phalacrocorax carbo</em></span></span></div>
+    <div class="grp">鹰形目<span class="la">Accipitriformes</span></div>
+    <div class="fam">鹰科<span class="la">Accipitridae</span></div>
+    <div class="idx"><span class="n">38</span><span><span class="cn">黑翅鸢</span><span class="sci">Black-winged Kite · <em>Elanus caeruleus</em></span></span></div>
+    <div class="idx"><span class="n">39</span><span><span class="cn">黑鸢</span><span class="sci">Black Kite · <em>Milvus migrans</em></span></span></div>
+    <div class="grp">隼形目<span class="la">Falconiformes</span></div>
+    <div class="fam">隼科<span class="la">Falconidae</span></div>
+    <div class="idx"><span class="n">40</span><span><span class="cn">红隼</span><span class="sci">Common Kestrel · <em>Falco tinnunculus</em></span></span></div>
+    <div class="idx"><span class="n">41</span><span><span class="cn">游隼</span><span class="sci">Peregrine Falcon · <em>Falco peregrinus</em></span></span></div>
+    <div class="grp">佛法僧目<span class="la">Coraciiformes</span></div>
+    <div class="fam">翠鸟科<span class="la">Alcedinidae</span></div>
+    <div class="idx"><span class="n">42</span><span><span class="cn">普通翠鸟</span><span class="sci">Common Kingfisher · <em>Alcedo atthis</em></span></span></div>
+    <div class="grp">鴷形目<span class="la">Piciformes</span></div>
+    <div class="fam">拟啄木鸟科<span class="la">Megalaimidae</span></div>
+    <div class="idx"><span class="n">43</span><span><span class="cn">大拟啄木鸟</span><span class="sci">Great Barbet · <em>Psilopogon virens</em></span></span></div>
+    <div class="fam">啄木鸟科<span class="la">Picidae</span></div>
+    <div class="idx"><span class="n">44</span><span><span class="cn">星头啄木鸟</span><span class="sci">Grey-capped Pygmy Woodpecker · <em>Yungipicus canicapillus</em></span></span></div>
+    <div class="grp">雀形目<span class="la">Passeriformes</span></div>
+    <div class="fam">伯劳科<span class="la">Laniidae</span></div>
+    <div class="idx"><span class="n">45</span><span><span class="cn">虎纹伯劳</span><span class="sci">Tiger Shrike · <em>Lanius tigrinus</em></span></span></div>
+    <div class="idx"><span class="n">46</span><span><span class="cn">棕背伯劳</span><span class="sci">Long-tailed Shrike · <em>Lanius schach</em></span></span></div>
+    <div class="idx"><span class="n">47</span><span><span class="cn">灰背伯劳</span><span class="sci">Grey-backed Shrike · <em>Lanius tephronotus</em></span></span></div>
+    <div class="fam">鸦科<span class="la">Corvidae</span></div>
+    <div class="idx"><span class="n">48</span><span><span class="cn">灰树鹊</span><span class="sci">Grey Treepie · <em>Dendrocitta formosae</em></span></span></div>
+    <div class="idx"><span class="n">49</span><span><span class="cn">红嘴蓝鹊</span><span class="sci">Red-billed Blue Magpie · <em>Urocissa erythroryncha</em></span></span></div>
+    <div class="idx"><span class="n">50</span><span><span class="cn">喜鹊</span><span class="sci">Oriental Magpie · <em>Pica serica</em></span></span></div>
+    <div class="fam">山雀科<span class="la">Paridae</span></div>
+    <div class="idx"><span class="n">51</span><span><span class="cn">大山雀</span><span class="sci">Great Tit · <em>Parus major</em></span></span></div>
+    <div class="fam">长尾山雀科<span class="la">Aegithalidae</span></div>
+    <div class="idx"><span class="n">52</span><span><span class="cn">红头长尾山雀</span><span class="sci">Black-throated Bushtit · <em>Aegithalos concinnus</em></span></span></div>
+    <div class="fam">鹎科<span class="la">Pycnonotidae</span></div>
+    <div class="idx"><span class="n">53</span><span><span class="cn">领雀嘴鹎</span><span class="sci">Collared Finchbill · <em>Spizixos semitorques</em></span></span></div>
+    <div class="idx"><span class="n">54</span><span><span class="cn">白头鹎</span><span class="sci">Light-vented Bulbul · <em>Pycnonotus sinensis</em></span></span></div>
+    <div class="idx"><span class="n">55</span><span><span class="cn">红耳鹎</span><span class="sci">Red-whiskered Bulbul · <em>Pycnonotus jocosus</em></span></span></div>
+    <div class="idx"><span class="n">56</span><span><span class="cn">绿翅短脚鹎</span><span class="sci">Mountain Bulbul · <em>Ixos mcclellandii</em></span></span></div>
+    <div class="idx"><span class="n">57</span><span><span class="cn">栗背短脚鹎</span><span class="sci">Chestnut Bulbul · <em>Hemixos castanonotus</em></span></span></div>
+    <div class="idx"><span class="n">58</span><span><span class="cn">黑短脚鹎</span><span class="sci">Black Bulbul · <em>Hypsipetes leucocephalus</em></span></span></div>
+    <div class="fam">叶鹎科<span class="la">Chloropseidae</span></div>
+    <div class="idx"><span class="n">59</span><span><span class="cn">橙腹叶鹎</span><span class="sci">Orange-bellied Leafbird · <em>Chloropsis hardwickii</em></span></span></div>
+    <div class="fam">扇尾莺科<span class="la">Cisticolidae</span></div>
+    <div class="idx"><span class="n">60</span><span><span class="cn">纯色山鹪莺</span><span class="sci">Plain Prinia · <em>Prinia inornata</em></span></span></div>
+    <div class="fam">树莺科<span class="la">Cettiidae</span></div>
+    <div class="idx"><span class="n">61</span><span><span class="cn">远东树莺</span><span class="sci">Manchurian Bush Warbler · <em>Horornis canturians</em></span></span></div>
+    <div class="fam">柳莺科<span class="la">Phylloscopidae</span></div>
+    <div class="idx"><span class="n">62</span><span><span class="cn">黄腰柳莺</span><span class="sci">Pallas's Leaf Warbler · <em>Phylloscopus proregulus</em></span></span></div>
+    <div class="idx"><span class="n">63</span><span><span class="cn">栗头鹟莺</span><span class="sci">Chestnut-crowned Warbler · <em>Phylloscopus castaniceps</em></span></span></div>
+    <div class="fam">绣眼鸟科<span class="la">Zosteropidae</span></div>
+    <div class="idx"><span class="n">64</span><span><span class="cn">暗绿绣眼鸟</span><span class="sci">Japanese White-eye · <em>Zosterops japonicus</em></span></span></div>
+    <div class="fam">椋鸟科<span class="la">Sturnidae</span></div>
+    <div class="idx"><span class="n">65</span><span><span class="cn">八哥</span><span class="sci">Crested Myna · <em>Acridotheres cristatellus</em></span></span></div>
+    <div class="idx"><span class="n">66</span><span><span class="cn">黑领椋鸟</span><span class="sci">Black-collared Starling · <em>Gracupica nigricollis</em></span></span></div>
+    <div class="idx"><span class="n">67</span><span><span class="cn">丝光椋鸟</span><span class="sci">Red-billed Starling · <em>Spodiopsar sericeus</em></span></span></div>
+    <div class="idx"><span class="n">68</span><span><span class="cn">灰椋鸟</span><span class="sci">White-cheeked Starling · <em>Spodiopsar cineraceus</em></span></span></div>
+    <div class="fam">鸫科<span class="la">Turdidae</span></div>
+    <div class="idx"><span class="n">69</span><span><span class="cn">乌鸫</span><span class="sci">Chinese Blackbird · <em>Turdus mandarinus</em></span></span></div>
+    <div class="fam">鹟科<span class="la">Muscicapidae</span></div>
+    <div class="idx"><span class="n">70</span><span><span class="cn">鹊鸲</span><span class="sci">Oriental Magpie-Robin · <em>Copsychus saularis</em></span></span></div>
+    <div class="idx"><span class="n">71</span><span><span class="cn">红尾水鸲</span><span class="sci">Plumbeous Water Redstart · <em>Phoenicurus fuliginosus</em></span></span></div>
+    <div class="idx"><span class="n">72</span><span><span class="cn">北红尾鸲</span><span class="sci">Daurian Redstart · <em>Phoenicurus auroreus</em></span></span></div>
+    <div class="idx"><span class="n">73</span><span><span class="cn">灰背燕尾</span><span class="sci">Slaty-backed Forktail · <em>Enicurus schistaceus</em></span></span></div>
+    <div class="idx"><span class="n">74</span><span><span class="cn">蓝矶鸫</span><span class="sci">Blue Rock-Thrush · <em>Monticola solitarius</em></span></span></div>
+    <div class="idx"><span class="n">75</span><span><span class="cn">紫啸鸫</span><span class="sci">Blue Whistling-Thrush · <em>Myophonus caeruleus</em></span></span></div>
+    <div class="idx"><span class="n">76</span><span><span class="cn">鸲姬鹟</span><span class="sci">Mugimaki Flycatcher · <em>Ficedula mugimaki</em></span></span></div>
+    <div class="idx"><span class="n">77</span><span><span class="cn">灰纹鹟</span><span class="sci">Grey-streaked Flycatcher · <em>Muscicapa griseisticta</em></span></span></div>
+    <div class="fam">戴菊科<span class="la">Regulidae</span></div>
+    <div class="idx"><span class="n">78</span><span><span class="cn">戴菊</span><span class="sci">Goldcrest · <em>Regulus regulus</em></span></span></div>
+    <div class="fam">䴓科<span class="la">Sittidae</span></div>
+    <div class="idx"><span class="n">79</span><span><span class="cn">普通䴓</span><span class="sci">Eurasian Nuthatch · <em>Sitta europaea</em></span></span></div>
+    <div class="fam">噪鹛科<span class="la">Leiothrichidae</span></div>
+    <div class="idx"><span class="n">80</span><span><span class="cn">黑脸噪鹛</span><span class="sci">Masked Laughingthrush · <em>Pterorhinus perspicillatus</em></span></span></div>
+    <div class="idx"><span class="n">81</span><span><span class="cn">红嘴相思鸟</span><span class="sci">Red-billed Leiothrix · <em>Leiothrix lutea</em></span></span></div>
+    <div class="fam">鹛科<span class="la">Timaliidae</span></div>
+    <div class="idx"><span class="n">82</span><span><span class="cn">红头穗鹛</span><span class="sci">Rufous-capped Babbler · <em>Cyanoderma ruficeps</em></span></span></div>
+    <div class="fam">太阳鸟科<span class="la">Nectariniidae</span></div>
+    <div class="idx"><span class="n">83</span><span><span class="cn">叉尾太阳鸟</span><span class="sci">Fork-tailed Sunbird · <em>Aethopyga christinae</em></span></span></div>
+    <div class="fam">雀科<span class="la">Passeridae</span></div>
+    <div class="idx"><span class="n">84</span><span><span class="cn">麻雀</span><span class="sci">Eurasian Tree Sparrow · <em>Passer montanus</em></span></span></div>
+    <div class="fam">燕雀科<span class="la">Fringillidae</span></div>
+    <div class="idx"><span class="n">85</span><span><span class="cn">金翅雀</span><span class="sci">Grey-capped Greenfinch · <em>Chloris sinica</em></span></span></div>
+    <div class="fam">鹀科<span class="la">Emberizidae</span></div>
+    <div class="idx"><span class="n">86</span><span><span class="cn">灰头鹀</span><span class="sci">Black-faced Bunting · <em>Emberiza spodocephala</em></span></span></div>
+    <div class="idx"><span class="n">87</span><span><span class="cn">小鹀</span><span class="sci">Little Bunting · <em>Emberiza pusilla</em></span></span></div>
+    <div class="fam">鹡鸰科<span class="la">Motacillidae</span></div>
+    <div class="idx"><span class="n">88</span><span><span class="cn">树鹨</span><span class="sci">Olive-backed Pipit · <em>Anthus hodgsoni</em></span></span></div>
+    <div class="idx"><span class="n">89</span><span><span class="cn">田鹨</span><span class="sci">Richard's Pipit · <em>Anthus richardi</em></span></span></div>
+    <div class="idx"><span class="n">90</span><span><span class="cn">白鹡鸰</span><span class="sci">White Wagtail · <em>Motacilla alba</em></span></span></div>
+    <div class="idx"><span class="n">91</span><span><span class="cn">灰鹡鸰</span><span class="sci">Grey Wagtail · <em>Motacilla cinerea</em></span></span></div>
+    <div class="idx"><span class="n">92</span><span><span class="cn">黄鹡鸰</span><span class="sci">Yellow Wagtail · <em>Motacilla flava</em></span></span></div>
   </div>
 </details>
 
@@ -456,7 +517,7 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
     </figure>
   </div>
 </details>
-<details class="log" id="xihu">
+<details class="log" id="xihu" open>
   <summary class="log-head">
     <span class="log-no">05</span>
     <span class="log-title">
@@ -508,7 +569,7 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
     </figure>
   </div>
 </details>
-<details class="log" id="guling">
+<details class="log" id="guling" open>
   <summary class="log-head">
     <span class="log-no">06</span>
     <span class="log-title">
@@ -560,7 +621,7 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
     </figure>
   </div>
 </details>
-<details class="log" id="fafu">
+<details class="log" id="fafu" open>
   <summary class="log-head">
     <span class="log-no">07</span>
     <span class="log-title">
@@ -573,10 +634,11 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
     <figure class="plate">
       <img src="images/fafu/crested-myna-and-shrike.jpg" alt="八哥与棕背伯劳 Crested Myna and Long-tailed Shrike" loading="lazy">
       <figcaption>
-        <span class="cn">八哥 · 与棕背伯劳同框</span>
-        <span class="sci"><em>Acridotheres cristatellus</em></span>
-        <span class="en">Crested Myna</span>
+        <span class="cn">八哥 · 棕背伯劳</span>
+        <span class="sci"><em>Acridotheres cristatellus</em> · <em>Lanius schach</em></span>
+        <span class="en">Crested Myna · Long-tailed Shrike</span>
       </figcaption>
+      <p class="note">同一棵枯枝上：左上是八哥，右下是棕背伯劳，两者相隔不到一米。<span class="en2">Two species sharing one dead branch — a Crested Myna on the upper left, a Long-tailed Shrike below it, less than a metre apart.</span></p>
     </figure>
     <figure class="plate">
       <img src="images/fafu/little-egrets.jpg" alt="白鹭满枝头 Little Egret" loading="lazy">
@@ -612,7 +674,7 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
     </figure>
   </div>
 </details>
-<details class="log" id="dongtan">
+<details class="log" id="dongtan" open>
   <summary class="log-head">
     <span class="log-no">08</span>
     <span class="log-title">
@@ -629,6 +691,7 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
         <span class="sci"><em>Alcedo atthis</em></span>
         <span class="en">Common Kingfisher</span>
       </figcaption>
+      <p class="note">东滩的木栈道上，一只普通翠鸟撞上玻璃围栏后落入木板缝里。巡护员把它捧在手心取暖、喂水，观察了二三十分钟；它缓过来之后被放回芦苇丛。<span class="en2">On the boardwalk at Dongtan a Common Kingfisher struck a glass railing and dropped into the gap between deck boards. A warden warmed it in cupped hands and offered water; after twenty or thirty minutes it recovered and was released into the reeds.</span></p>
     </figure>
     <figure class="plate">
       <img src="images/dongtan/indian-cuckoo.jpg" alt="四声杜鹃 Indian Cuckoo" loading="lazy">
@@ -664,7 +727,7 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
     </figure>
   </div>
 </details>
-<details class="log" id="shouxi">
+<details class="log" id="shouxi" open>
   <summary class="log-head">
     <span class="log-no">09</span>
     <span class="log-title">
