@@ -99,6 +99,9 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
 .grp:first-child { margin-top:16px; padding-top:0; border-top:none; }
 .fam { grid-column:1/-1; display:flex; align-items:baseline; gap:10px; margin:16px 0 2px; font-size:13px; letter-spacing:.08em; color:#3a382f; }
 .fam .la { font-family:ui-sans-serif,-apple-system,"Helvetica Neue",Arial,sans-serif; font-size:10.5px; font-weight:400; font-style:italic; letter-spacing:.06em; color:var(--faint); }
+.plates.field img { aspect-ratio:auto; }
+.plates.field .plate:not(.full) img { aspect-ratio:3/2; object-position:center 35%; }
+.plate.full { grid-column:1/-1; }
 .plate .note { margin:10px 0 0; padding-left:12px; border-left:2px solid var(--rule); font-size:12.5px; line-height:1.65; color:#6f6a5c; }
 .plate .note .en2 { display:block; }
 
@@ -133,6 +136,7 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
 <a href="#fafu"><span class="n">07</span><span class="t">福建农林大学</span></a>
 <a href="#dongtan"><span class="n">08</span><span class="t">崇明东滩湿地</span></a>
 <a href="#shouxi"><span class="n">09</span><span class="t">莆田绶溪公园</span></a>
+<a href="#fieldwork"><span class="n">10</span><span class="t">观鸟时的我</span></a>
 </nav>
 
 <details class="list">
@@ -780,9 +784,46 @@ figcaption .en { margin-top:5px; font-size:10px; letter-spacing:.18em; text-tran
   </div>
 </details>
 
+<details class="log" id="fieldwork" open>
+  <summary class="log-head">
+    <span class="log-no">10</span>
+    <span class="log-title">
+      <h2>观鸟时的我</h2>
+      <span class="log-sub">Behind the Binoculars<span class="sep">—</span>Fujian · 2026</span>
+    </span>
+    <span class="tgl" aria-hidden="true"></span>
+  </summary>
+  <div class="plates field">
+    <figure class="plate full">
+      <img src="images/field/min-river-estuary.jpg" alt="闽江河口国家湿地公园 Min River Estuary National Wetland Park" loading="lazy">
+      <figcaption>
+        <span class="cn">闽江河口国家湿地公园</span>
+        <span class="sci">和爸妈在导览图前 · setting out from the trailhead</span>
+        <span class="en">Fuzhou, Fujian</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/field/mother-photographing.jpg" alt="母亲在拍照 My mother photographing" loading="lazy">
+      <figcaption>
+        <span class="cn">母亲在拍照</span>
+        <span class="sci">傍晚的堤上 · on the seawall at dusk</span>
+        <span class="en">My mother, photographing</span>
+      </figcaption>
+    </figure>
+    <figure class="plate">
+      <img src="images/field/removing-nets.jpg" alt="连江山堂村拆鸟网 Removing bird nets at Shantang" loading="lazy">
+      <figcaption>
+        <span class="cn">山堂村 · 拆鸟网</span>
+        <span class="sci">和同伴一起，把菜地边上的鸟网拆下来</span>
+        <span class="en">Removing bird nets, Lianjiang</span>
+      </figcaption>
+    </figure>
+  </div>
+</details>
+
 <section class="notes">
   <header class="log-head">
-    <span class="log-no">10</span>
+    <span class="log-no">11</span>
     <div>
       <h2>观鸟记录与环境思考</h2>
       <p class="log-sub">Field Notes</p>
